@@ -1,0 +1,8 @@
+projet avec une base esup-commons V2
+
+Génération des packages :
+mvn clean package
+
+JQuery UI :
+- jQuery 1.7.1 
+

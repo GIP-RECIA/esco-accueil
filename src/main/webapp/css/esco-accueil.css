@@ -1,0 +1,141 @@
+/**
+ * Copyright (C) 2012 Esup Portail http://www.esup-portail.org
+ * Copyright (C) 2012 RECIA http://www.recia.fr
+ * @Author (C) 2012 Julien Gribonvald <julien.gribonvald@recia.fr>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.esco-accueil {
+	/*color: #444;
+	font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 12px;
+	margin:0;
+	padding:0;
+}
+
+/* Titre */
+
+.esco-accueil h1 {
+	font-size: 40px;
+	color: #00C0FF;
+	margin:0;
+}
+
+.esco-accueil h2 {
+	color:#eee;
+}
+
+.esco-accueil h3 {
+	color:#fff;
+	font-size: 18px;
+	margin:0;
+}
+
+/* Liens */
+
+.esco-accueil a {
+	color: #00C0FF;
+	text-decoration: none;
+}
+
+.esco-accueil a:hover {
+	text-decoration: underline;
+}
+
+.esco-accueil #content ul,.esco-accueil #content li {
+	text-decoration: none;
+	list-style:none;
+	margin:0;
+	padding:0;
+	border: 0;
+}
+
+/* Conteneur */
+
+.esco-accueil div#content {
+	background:#39414A;
+	position:relative;
+	margin:auto;
+	color: #d5d5d5;
+	border:1px solid white;
+	float:center;
+	width:1000px;
+	height:500px;
+}
+
+.esco-accueil div#content_netocentre {
+	border:0px solid white;
+	float:center;
+}
+
+.esco-accueil div#slider {
+	float:left;
+	border:0;
+}
+.esco-accueil div#slider img {
+	margin:0;
+}
+.esco-accueil div#navigation {
+	float:right;
+}
+.esco-accueil div#navigation li{
+	margin:0;
+	border: 0px;
+}
+.esco-accueil div#navigation img{
+	margin:0;
+	float:left;
+	border: 0px;
+}
+.esco-accueil div#navigation .meta{
+	margin:0;
+	float:right;
+	width:180px;
+}
+.esco-accueil .boutons {
+	display:none;
+}
+
+/* Images */
+
+.esco-accueil img {
+	margin:0;
+	border:0px solid transparent;
+}
+
+/* Texte */
+
+.esco-accueil p {
+	margin:0;
+	align:justify;
+}
+
+.esco-accueil .image {
+	float:left;
+}
+
+.esco-accueil .text {
+	float:right;
+}
+
+/* Mises en valeur */
+.esco-accueil .current-navigation{
+	background-color:#1c1c1c;
+	background-image:url(/esco-accueil/img/fleche.png);
+	background-repeat:no-repeat;
+}
+
+.erreur {
+	background:#FFD5C7;
+	border:2px solid #c00 !important;
+	color:#000;
+}
