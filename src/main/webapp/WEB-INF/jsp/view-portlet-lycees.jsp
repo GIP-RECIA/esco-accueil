@@ -40,9 +40,9 @@
 	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
     var jQuery = $.noConflict(true);
-    </script>
+</script>
 
-<div class="esco-accueil">
+<div  class="esco-accueil">
 
 	<div class="container">
 
@@ -52,37 +52,39 @@
 
 				<div id="content" class="esco-accueil">
 					<div id="slider" class="esco-accueil">
-						<ul class="esco-accueil">
-							<li class="esco-accueil"><img src="/esco-accueil/img/netocentre.jpg" title="NetOCentre"></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/region.jpg" title="Région Centre"></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/academie.jpg" title="Académie Orléans-Tours"></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/agricole.jpg"	title="Enseignement Agricole"></li>
+						<ul>
+							<li><img src="/esco-accueil/img/netocentre.jpg" title="NetOCentre"></li>
+							<li><img src="/esco-accueil/img/region.jpg" title="Région Centre"></li>
+							<li><img src="/esco-accueil/img/academie.jpg" title="Académie Orléans-Tours"></li>
+							<li><img src="/esco-accueil/img/agricole.jpg"	title="Enseignement Agricole"></li>
 						</ul>
 					</div>
 					<div id="navigation" class="esco-accueil">
-						<ul class="esco-accueil">
-							<li class="esco-accueil"><img src="/esco-accueil/img/thumb_netocentre.jpg" alt="NetOCentre" />
+						<ul>
+							<li><img src="/esco-accueil/img/thumb_netocentre.jpg" alt="NetOCentre" />
 								<div class="esco-accueil meta">
-									<h3 class="esco-accueil">NetOCentre</h3>
-									<p class="esco-accueil">Et est admodum mirum videre plebem innumeram ...</p>
+									<h3>NetO'Centre</h3>
+									<p>Qu’est-ce que c'est&nbsp;?</p>
+									<p>Quels sont les services et applications disponibles&nbsp;? </p>
 									<a class="readmore" href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=netocentre">En savoir plus </a>
 								</div></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/thumb_region.jpg" />
+							<li><img src="/esco-accueil/img/thumb_region.jpg" />
 								<div class="esco-accueil meta">
-									<h3 class="esco-accueil">Région Centre</h3>
-									<p class="esco-accueil">Et prima post Osdroenam quam, ut dictum est ...</p>
+									<h3>Région Centre</h3>
+									<p>La Région a la responsabilité des conditions matérielles
+						offertes ...</p>
 									<a class="readmore" href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=region">En savoir plus </a>
 								</div></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/thumb_academie.jpg" />
+							<li><img src="/esco-accueil/img/thumb_academie.jpg" />
 								<div class="esco-accueil meta">
-									<h3 class="esco-accueil">Académie Orléans-Tours</h3>
-									<p class="esco-accueil">Ideo urbs venerabilis post superbas efferatarum ...</p>
+									<h3>Académie Orléans-Tours</h3>
+									<p>Le développement des usages numériques est une volonté forte ...</p>
 									<a class="readmore" href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=academie">En savoir plus </a>
 								</div></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/thumb_agricole.jpg" />
+							<li><img src="/esco-accueil/img/thumb_agricole.jpg" />
 								<div class="esco-accueil meta">
-									<h3 class="esco-accueil">Enseignement Agricole</h3>
-									<p class="esco-accueil">Has autem provincias, quas Orontes ambiens amnis ...</p>
+									<h3>Enseignement Agricole</h3>
+									<p>Les lycées agricoles ... à l'ère du numérique !</p>
 									<a class="readmore" href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=agricole">En savoir plus </a>
 								</div></li>
 						</ul>

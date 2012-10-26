@@ -39,44 +39,6 @@
 	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
 	var jQuery = $.noConflict(true);
-	(function($) {
-
-		$(document)
-				.ready(
-						function() {
-							$('#content_netocentre img').load(function(e) {
-								doresize($(this));
-							});
-
-							$(window).resize(function() {
-								doresize($('#content_netocentre img'));
-								console.log("=== Windows RESIZING ! ===");
-							});
-
-							function doresize(img) {
-
-								var old_width = img.outerWidth();
-								var new_width = $('.portlet-section')
-										.outerWidth() * 0.38;
-								var ratio = old_width / new_width;
-								var new_height = img.outerHeight() / ratio;
-								console.log("img_width : " + new_width);
-								console.log("img_height : " + new_height);
-								img.css('width', new_width);
-								img.css('height', new_height);
-								img.parent().css('width', new_width);
-								img.parent().css('height', new_height);
-								console.log($('.portlet-section').outerWidth());
-								$('#content_netocentre .text').css(
-										'width',
-										$('.portlet-section').outerWidth()
-												- new_width - 40);
-								$('#content_netocentre .text').css(
-										'margin-top', '10px');
-
-							}
-						});
-	})(jQuery);
 </script>
 
 <div class="esco-accueil">
@@ -87,21 +49,20 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content_netocentre">
+				<div id="content_netocentre" class="text">
 
-					<div class="image">
 						<img src="/esco-accueil/img/region.jpg" title="Région Centre">
-					</div>
-					<div class="text">
-						<br>
+                    <H3>
+                        <FONT COLOR="#548dd4"><B>La Région Centre</B></FONT>
+                    </H3>
+                    <br>
 						<p>
-							Pour plus d’informations sur les dispositifs proposés par la
+							Pour plus d'informations sur les dispositifs proposés par la
 							Région Centre aux lycées, apprentis et étudiants, ne manquez pas
 							de visiter <a href="http://www.jeunesOCentre.fr">www.jeunesOCentre.fr</a>
 							ou <a href="http://www.regioncentre.fr">www.regioncentre.fr</a>
 						</p>
 
-					</div>
 				</div>
 
 			</div>
@@ -110,5 +71,6 @@
 
 	</div>
 
-
 </div>
+
+<script type="text/javascript" src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>

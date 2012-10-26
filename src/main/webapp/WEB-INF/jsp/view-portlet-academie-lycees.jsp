@@ -39,44 +39,6 @@
 	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
 	var jQuery = $.noConflict(true);
-	(function($) {
-
-		$(document)
-				.ready(
-						function() {
-							$('#content_netocentre img').load(function(e) {
-								doresize($(this));
-							});
-
-							$(window).resize(function() {
-								doresize($('#content_netocentre img'));
-								console.log("=== Windows RESIZING ! ===");
-							});
-
-							function doresize(img) {
-
-								var old_width = img.outerWidth();
-								var new_width = $('.portlet-section')
-										.outerWidth() * 0.38;
-								var ratio = old_width / new_width;
-								var new_height = img.outerHeight() / ratio;
-								console.log("img_width : " + new_width);
-								console.log("img_height : " + new_height);
-								img.css('width', new_width);
-								img.css('height', new_height);
-								img.parent().css('width', new_width);
-								img.parent().css('height', new_height);
-								console.log($('.portlet-section').outerWidth());
-								$('#content_netocentre .text').css(
-										'width',
-										$('.portlet-section').outerWidth()
-												- new_width - 40);
-								$('#content_netocentre .text').css(
-										'margin-top', '10px');
-
-							}
-						});
-	})(jQuery);
 </script>
 
 <div class="esco-accueil">
@@ -87,35 +49,34 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content_netocentre">
+				<div id="content_netocentre" class="text">
 
-					<div class="image">
-						<img src="/esco-accueil/img/academie.jpg" title="Académie Orléans-Tours">
-					</div>
-					<div class="text">
-						<br>
-						<p>Le développement des usages numériques est une volonté
-							forte de Monsieur le Ministre de l’Education Nationale, qui
-							s’inscrit de manière pérenne, dans la mise en œuvre d’une
-							politique numérique nationale initiée il y a près de dix ans.
-							Récemment, des moyens ont été attribués aux établissements dans
-							le cadre du plan Développement des Usages Numériques pour les
-							Etablissements scolaires et les écoles (DUNE).</p>
-							<br>
-						<p>Au niveau académique, Madame le Recteur a impulsé
-							fortement, en relation avec ses partenaires des collectivités
-							territoriales, la généralisation des Espaces Numériques de
-							Travail ; ces derniers ayant pour finalité de simplifier et de
-							fluidifier l’accès à l’ensemble des ressources et services
-							numériques que crée ou exploite un établissement scolaire, et qui
-							sont proposés à l’ensemble des acteurs de la communauté éducative
-							(élèves, enseignants, parents, chefs d’établissements,
-							partenaires,…).</p>
-							<br>
-						<P>Les outils présents dans les ENT ont également vocation à
-							faciliter les apprentissages des élèves et à personnaliser leur
-							parcours.</P>
-					</div>
+					<img src="/esco-accueil/img/academie.jpg"
+						title="Académie Orléans-Tours">
+					<H3>
+						<FONT color="#548dd4"><B>Académie d'Orléans-Tours</B></FONT>
+					</H3>
+					<br>
+					<p>Le développement des usages numériques est une volonté forte
+						de Monsieur le Ministre de l'Education Nationale, qui s'inscrit de
+						manière pérenne dans la mise en œuvre d'une politique numérique
+						nationale initiée il y a près de dix ans. Récemment, des moyens
+						ont été attribués aux établissements dans le cadre du plan
+						Développement des Usages Numériques pour les Établissements
+						scolaires et les écoles (DUNE).</p>
+					<br>
+					<p>Au niveau académique, Madame le Recteur a impulsé fortement,
+						en relation avec ses partenaires des collectivités territoriales,
+						la généralisation des Espaces Numériques de Travail ; ces derniers
+						ayant pour finalité de simplifier et de fluidifier l'accès à
+						l'ensemble des ressources et services numériques que crée ou
+						exploite un établissement scolaire, et qui sont proposés à
+						l'ensemble des acteurs de la communauté éducative (élèves,
+						enseignants, parents, chefs d'établissements, partenaires,…).</p>
+					<br>
+					<P>Les outils présents dans les ENT ont également vocation à
+						faciliter les apprentissages des élèves et à personnaliser leur
+						parcours.</P>
 				</div>
 
 			</div>
@@ -126,3 +87,6 @@
 
 
 </div>
+
+<script type="text/javascript"
+	src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>

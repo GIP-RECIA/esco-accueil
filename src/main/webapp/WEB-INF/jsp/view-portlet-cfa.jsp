@@ -40,7 +40,7 @@
 	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
     var jQuery = $.noConflict(true);
-    </script>
+</script>
 
 <div class="esco-accueil">
 

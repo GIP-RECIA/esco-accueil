@@ -38,39 +38,8 @@
 <script type="text/javascript"
 	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
-    var jQuery = $.noConflict(true);
-    ( function($) {
-
-    	$(document).ready(function(){
-    		$('#content_netocentre img').load(function(e){
-				doresize($(this));
-    		});
-
-    		$(window).resize(function(){
-    			doresize($('#content_netocentre img'));
-    			console.log("=== Windows RESIZING ! ===");
-    		});
-
-    		function doresize(img){
-
-	    			var old_width = img.outerWidth();
-					var new_width = $('.portlet-section').outerWidth()*0.38;
-					var ratio = old_width/new_width;
-					var new_height = img.outerHeight()/ratio;
-					console.log("img_width : " + new_width);
-					console.log("img_height : " + new_height);
-	    			img.css('width', new_width);
-	    			img.css('height', new_height);
-	    			img.parent().css('width', new_width);
-	    			img.parent().css('height', new_height);
-	    			console.log($('.portlet-section').outerWidth());
-	    			$('#content_netocentre .text').css('width', $('.portlet-section').outerWidth()-new_width-40);
-	    			$('#content_netocentre .text').css('margin-top', '10px');
-
-    		}
-    	});
-    })(jQuery);
-    </script>
+	var jQuery = $.noConflict(true);
+</script>
 
 <div class="esco-accueil">
 
@@ -80,73 +49,58 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content_netocentre">
+				<div id="content_netocentre" class="text">
 
-					<div class="image">
-						<img src="/esco-accueil/img/agricole.jpg" title="Enseignement Agricole">
-					</div>
-					<div class="text">
-						<H3>
-							<FONT COLOR="#548dd4"><B>Net O Centre, qu’est-ce que c’est&nbsp;?</B></FONT>
-						</H3>
-						<br>
-						<P>Le principe d’un Espace Numérique de Travail est de
-							proposer à travers un site web sécurisé un point d’accès unique
-							où l’enseignant, l’élève et l’ensemble des personnels de
-							l’établissement, peuvent trouver les informations, outils et
-							services numériques en rapport avec leurs activités éducatives.</P>
-						<P>
-							<BR>
-						</P>
-						<P>Une connexion internet, un clic et vous accédez ainsi en
-							temps réel avec Net O Centre à votre bureau virtuel, votre
-							cartable électronique (cahier de texte, cours en ligne,
-							messagerie, notes et absences, ressources numériques …)</P>
-						<P>
-							<BR>
-						</P>
-						<P>Les parents d’élève disposent également d’un compte dans
-							l’ENT leur permettant notamment de pouvoir consulter des
-							informations concernant la scolarité de leur enfant (gestion des
-							notes, des absences …).</P>
-						<P>
-							<BR>
-						</P>
-						<P>A partir de la collaboration entre le Rectorat
-							Orléans-Tours, la DRAAF (Direction Régionale de l’Alimentation de
-							l’Agriculture et de la Forêt) le GIP RECIA (Région Centre
-							Interactive) et la Région Centre, Net O Centre est accessible
-							depuis la rentrée scolaire 2012 dans l’ensemble des lycées
-							publics de la région.</P>
-						<P>
-							<BR>
-						</P>
-						<P>Rentrez dans une nouvelle dimension avec Net O Centre.</P>
-						<BR> <BR>
-						<H3>
-							<FONT COLOR="#548dd4"><B>Quels sont les services et
-									applications disponibles&nbsp;? </B></FONT>
-						</H3>
-						<BR>
-						<P>Avec Net O Centre vous pouvez, en fonction des choix et des
-							abonnements souscrits par l’établissement et de votre profil,
-							accéder sans ré identification à plus d’une 20ene de services,
-							d’informations et d’applications dans les domaines suivants :</P>
-						<BR>
-						<UL>
-							<LI><P>pédagogie&nbsp;: cours en ligne, espace de
-									stockage personnalisé, aide aux devoirs,</P>
-							<LI><P>communication&nbsp;: messagerie, annonces,</P>
-							<LI><P>vie de l’établissement&nbsp;: gestion et
-									réservation des ressources et équipements,</P>
-							<LI><P>orientation&nbsp;: web classeur, Etoile, ONISEP,</P>
-							<LI><P>vie scolaire&nbsp;: cahier de texte, services de
-									gestion des notes et des absences,</P>
-							<LI><P>ressources numériques&nbsp;: manuels scolaires
-									numériques, abonnements à des ressources spécifiques&nbsp;: le
-									site.Tv, les encyclopédies</P>
-						</UL>
-					</div>
+					<img src="/esco-accueil/img/agricole.jpg"
+						title="Enseignement Agricole">
+					<H3>
+						<FONT color="#548dd4"><B>LES LYCÉES AGRICOLES … À L'ÈRE
+								DU NUMERIQUE !</B></FONT>
+					</H3>
+					<br>
+					<P>L'ENT Régional - Espace Numérique de Travail - NET O'CENTRE -
+						impulsé par le Conseil Régional et développé par le GIP RECIA est
+						mis en place depuis 2009 au Lycée Agricole de Vendôme.</P>
+					<BR>
+					<P>À partir d'un ordinateur connecté à Internet et à l'aide
+						d'un identifiant et d'un mot de passe, les enseignants et les
+						apprenants et leurs parents accèdent à des services, des
+						informations et des ressources qui les concernent.</P>
+					<BR>
+					<P>
+						Près de 90% des <B>élèves</B> consultent le cahier de texte
+						numérique, les annonces et surtout leur relevé de notes. Ils
+						peuvent accéder à leur espace de stockage ainsi qu'à des
+						ressources et manuels numériques.
+					</P>
+					<P>Les élèves ont tous une adresse mail et peuvent ainsi
+						communiquer en interne.</P>
+					<BR>
+					<P>
+						Du côté<I><B> des enseignants</B></I>, l'ENT a
+						permis l'usage d'une application de gestion des notes et des
+						appréciations. Les enseignants peuvent envoyer des messages aux
+						élèves et transmettre des informations et des documents
+						numériques.
+					</P>
+					<BR>
+					<P>
+						Les <I><B>parents </B></I>peuvent suivre à distance la scolarité
+						de leur enfant (notes, appréciations, devoirs…).
+					</P>
+					<p>La connexion à l'ENT leur permet de consulter des
+						informations telles que les événements du lycée, les dates de
+						conseils de classe et leur compte-rendu, le menu du self, etc...</p>
+					<BR>
+					<P>L'ENT est actuellement opérationnel au lycée de Vendôme.</P>
+					<P>Depuis septembre 2011, il est en cours de déploiement dans
+						les autres lycées agricoles publics de la région. Les
+						établissements, avec l'appui d'EDUTER d'AgroSup Dijon mettent
+						actuellement en conformité les bases de données, opération
+						préalable à la mise en production de l'ENT.</P>
+					<BR>
+					<P>La réflexion pour le déploiement de l'ENT dans les CFA est
+						initiée.</P>
 				</div>
 
 			</div>
@@ -155,5 +109,7 @@
 
 	</div>
 
-
 </div>
+
+<script type="text/javascript"
+	src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>

@@ -34,7 +34,7 @@
 	type="text/css" media="screen, projection">
 
 
-<div class="esupstock">
+<div class="esco-accueil">
 
 	<div class="portlet-section">
 

@@ -57,7 +57,7 @@
 	margin:0;
 	padding:0;
 	border: 0;
-}
+} 
 
 /* Conteneur */
 
@@ -74,7 +74,6 @@
 
 .esco-accueil div#content_netocentre {
 	border:0px solid white;
-	float:center;
 }
 
 .esco-accueil div#slider {
@@ -93,13 +92,15 @@
 }
 .esco-accueil div#navigation img{
 	margin:0;
-	float:left;
+	/*float:left;*/
 	border: 0px;
 }
 .esco-accueil div#navigation .meta{
 	margin:0;
 	float:right;
-	width:180px;
+	width:190px;
+	text-align:left;
+	padding: 0 5px 0 0;
 }
 .esco-accueil .boutons {
 	display:none;
@@ -112,19 +113,21 @@
 	border:0px solid transparent;
 }
 
+.esco-accueil div#content_netocentre img{
+	float:left;
+	margin:0 10px 0 0;
+}
+
+.esco-accueil div#content_netocentre li{
+    list-style:disc outside url("../img/Puce.png");
+}
+
+
 /* Texte */
 
 .esco-accueil p {
 	margin:0;
-	align:justify;
-}
-
-.esco-accueil .image {
-	float:left;
-}
-
-.esco-accueil .text {
-	float:right;
+	text-align: justify;
 }
 
 /* Mises en valeur */
