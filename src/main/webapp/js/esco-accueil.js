@@ -43,7 +43,7 @@
 			doresize();
 		});
 
-		setInterval(auto, 2000);
+		setInterval(auto, 5000);
 
 	});
 
