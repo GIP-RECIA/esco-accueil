@@ -39,20 +39,16 @@
 	});
 
 	$(document).ready(function(){
-		console.log("On Log !");
 		$('#slider img').css("position", "absolute");
 		$('#slider img:gt(0)').hide();
 		$('#navigation li:first').addClass('current-navigation');
 
 		$('#content').parent().append('<div class=\"esco-accueil boutons\"><p><a class=\"prev\" href=\"#\">Précédent</a>  <a class=\"next\" href=\"#\">Suivant</a></p></div>');
-		console.log("On Log 2 !");
 		//$('#content').waitForImages(imgonload());
 		imgonload();
-		console.log("On Log 3 !");
 		$(window).resize(function(){
 			doresize();
 		});
-		console.log("On Log 4 !");
 		setInterval(auto, 5000);
 
 	});
