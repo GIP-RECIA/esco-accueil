@@ -1,9 +1,12 @@
 ( function($) {
 
 	$(document).ready(function(){
-		$('#content_netocentre img').load(function(e){
-			doresize($(this));
-		});
+		var st_img = $('#content_netocentre img');
+		if (st_img.height() > 0) {
+			doresize(st_img);
+		} else {
+			st_img.on({'load': function(){doresize(st_img);}});
+		}
 
 		$(window).resize(function(){
 			doresize($('#content_netocentre img'));
@@ -12,10 +15,10 @@
 
 		function doresize(img) {
 
-			var old_width = img.outerWidth();
-			var new_width = $('.portlet-section').outerWidth() * 0.20;
+			var old_width = img.width();
+			var new_width = $('.portlet-section').width() * 0.20;
 			var ratio = old_width / new_width;
-			var new_height = img.outerHeight() / ratio;
+			var new_height = img.height() / ratio;
 			console.log("img_width : " + new_width);
 			console.log("img_height : " + new_height);
 			img.css('width', new_width);
