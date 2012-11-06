@@ -112,8 +112,8 @@
 					<p>
 						Pour plus d'informations sur les dispositifs proposés par la
 						Région Centre aux lycées, apprentis et étudiants, ne manquez pas
-						de visiter <a href="http://www.jeunesOCentre.fr">www.jeunesOCentre.fr</a>
-						ou <a href="http://www.regioncentre.fr">www.regioncentre.fr</a>
+						de visiter <a target="_blank" href="http://www.jeunesOCentre.fr">www.jeunesOCentre.fr</a>
+						ou <a target="_blank" href="http://www.regioncentre.fr">www.regioncentre.fr</a>
 					</p>
 
 				</div>
