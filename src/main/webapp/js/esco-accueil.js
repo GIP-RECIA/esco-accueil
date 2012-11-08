@@ -59,17 +59,21 @@
 			// on désactive la navigation auto
 			//console.log("Désactivation de la navigation auto");
 			$('a.next').off('click');
-			var pos_suivant = $(this).index();
-			$('.current-navigation').removeClass('current-navigation');
-			$(this).addClass('current-navigation');
-			//console.log(($(this).height()-$(this).find('img').height())/2+"px");
-			//$(this).find('img').css('margin-top',($(this).height()-$(this).find('img').height())/2+"px");
-			var image_courante = $('#slider').find('img:visible').css('height',slider_img.height()).css('width',slider_img.width());
-			var image_suivante = $('#slider').find('li').eq(pos_suivant).children('img').css('height',slider_img.height()).css('width',slider_img.width());
+			//$('a.prev').off('click');
+			if (!$(this).hasClass('current-navigation')){
+				//console.log("not hasClass !");
+				var pos_suivant = $(this).index();
+				$('.current-navigation').removeClass('current-navigation');
+				$(this).addClass('current-navigation');
+				//console.log(($(this).height()-$(this).find('img').height())/2+"px");
+				//$(this).find('img').css('margin-top',($(this).height()-$(this).find('img').height())/2+"px");
+				var image_courante = $('#slider').find('img:visible').css('height',slider_img.height()).css('width',slider_img.width());
+				var image_suivante = $('#slider').find('li').eq(pos_suivant).children('img').css('height',slider_img.height()).css('width',slider_img.width());
 
-			// Animation
-			image_suivante.stop(true,true).fadeIn();
-			image_courante.stop(true,true).fadeOut();
+				// Animation
+				image_suivante.stop(true,true).fadeIn();
+				image_courante.stop(true,true).fadeOut();
+			}
 		});
 	}
 
@@ -238,7 +242,7 @@
 	}
 
 	function auto(){
-		$("a.next").trigger("click");
+		$('a.next').trigger("click");
 	}
 
 })(jQuery);

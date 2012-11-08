@@ -86,23 +86,23 @@
 						plaisir d'apprendre.
 					</p>
 					<p>
-						<FONT COLOR="#548dd4">2008</FONT> – phase d'expérimentation dans
+						<FONT COLOR="#548dd4">2008</FONT> - phase d'expérimentation dans
 						le déploiement des Espaces Numériques de Travail dans tous les
 						lycées publics de la région.
 					</p>
 					<p>
-						<FONT COLOR="#548dd4">2010</FONT> – lancement d'une
+						<FONT COLOR="#548dd4">2010</FONT> - lancement d'une
 						expérimentation unique au niveau national de manuels scolaires
 						numériques depuis la rentrée scolaire 2010 dans 10 lycées de la
 						région.
 					</p>
 					<p>
-						<FONT COLOR="#548dd4">2011</FONT> – début du déploiement des
+						<FONT COLOR="#548dd4">2011</FONT> - début du déploiement des
 						Espaces Numériques de Travail Net O'Centre dans les Centres de
 						Formation d'Apprentis.
 					</p>
 					<p>
-						<FONT COLOR="#548dd4">2012</FONT> – dernière phase du plan de
+						<FONT COLOR="#548dd4">2012</FONT> - dernière phase du plan de
 						déploiement de la fibre optique dans les lycées publics. À la
 						rentrée 2012, 95% des lycées bénéficiet d'une connexion au
 						minimum à 10 méga.
