@@ -58,49 +58,24 @@
 								DU NUMERIQUE !</B></FONT>
 					</H3>
 					<br>
-					<P>L'ENT Régional - Espace Numérique de Travail - NET O'CENTRE -
-						impulsé par le Conseil Régional et développé par le GIP RECIA est
-						mis en place depuis 2009 au Lycée Agricole de Vendôme.</P>
+					<P>La Direction Régionale de l'Alimentation, de l'Agriculture et de
+						la Forêt participe au projet de développement de l'Espace
+						Numérique de Travail au sein des établissements d'Enseignement
+						Agricole soutenu par le Conseil Régional.</P>
 					<BR>
-					<P>À partir d'un ordinateur connecté à Internet et à l'aide
-						d'un identifiant et d'un mot de passe, les enseignants et les
-						apprenants et leurs parents accèdent à des services, des
-						informations et des ressources qui les concernent.</P>
+					<P>L'ENT répond à des enjeux importants pour la communauté
+						éducative, apprenants - enseignants - personnels administratifs -
+						parents, tant sur le plan du fonctionnement des établissements que
+						sur le plan de l'acquisition et de l'apprentissage des
+						connaissances par les apprenants.</P>
 					<BR>
-					<P>
-						Près de 90% des <B>élèves</B> consultent le cahier de texte
-						numérique, les annonces et surtout leur relevé de notes. Ils
-						peuvent accéder à leur espace de stockage ainsi qu'à des
-						ressources et manuels numériques.
-					</P>
-					<P>Les élèves ont tous une adresse mail et peuvent ainsi
-						communiquer en interne.</P>
+					<P>L'ENT est porteur de changements dans le mode de communication
+						et d'information, dans la maîtrise par tous des nouvelles
+						technologies, dans l'intégration des technologies de l'information
+						et de la communication dans les enseignements,... Il contribuera
+						au renforcement de l'accompagnement des apprenants dans leur
+						parcours de formation.</P>
 					<BR>
-					<P>
-						Du côté<I><B> des enseignants</B></I>, l'ENT a
-						permis l'usage d'une application de gestion des notes et des
-						appréciations. Les enseignants peuvent envoyer des messages aux
-						élèves et transmettre des informations et des documents
-						numériques.
-					</P>
-					<BR>
-					<P>
-						Les <I><B>parents </B></I>peuvent suivre à distance la scolarité
-						de leur enfant (notes, appréciations, devoirs…).
-					</P>
-					<p>La connexion à l'ENT leur permet de consulter des
-						informations telles que les événements du lycée, les dates de
-						conseils de classe et leur compte-rendu, le menu du self, etc...</p>
-					<BR>
-					<P>L'ENT est actuellement opérationnel au lycée de Vendôme.</P>
-					<P>Depuis septembre 2011, il est en cours de déploiement dans
-						les autres lycées agricoles publics de la région. Les
-						établissements, avec l'appui d'EDUTER d'AgroSup Dijon mettent
-						actuellement en conformité les bases de données, opération
-						préalable à la mise en production de l'ENT.</P>
-					<BR>
-					<P>La réflexion pour le déploiement de l'ENT dans les CFA est
-						initiée.</P>
 				</div>
 
 			</div>
