@@ -52,24 +52,29 @@
 
 				<div id="content" class="esco-accueil">
 					<div id="slider" class="esco-accueil">
-						<ul class="esco-accueil">
-							<li class="esco-accueil"><img src="/esco-accueil/img/netocentre-cfa.jpg" title="NetOCentre"></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/region.jpg" title="Région Centre"></li>
+						<ul>
+							<li><img src="/esco-accueil/img/netocentre-cfa.jpg"	alt="NetO'Centre"></li>
+							<li><img src="/esco-accueil/img/region.jpg" alt="Région Centre"></li>
 						</ul>
 					</div>
 					<div id="navigation" class="esco-accueil">
-						<ul class="esco-accueil">
-							<li class="esco-accueil"><img src="/esco-accueil/img/thumb_netocentre-cfa.jpg" alt="NetOCentre" />
+						<ul>
+							<li><img src="/esco-accueil/img/thumb_netocentre-cfa.jpg" alt="NetO'Centre" />
 								<div class="esco-accueil meta">
-									<h3 class="esco-accueil">NetOCentre</h3>
-									<p class="esco-accueil">Et est admodum mirum videre plebem innumeram ...</p>
-									<a class="readmore" href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=netocentre">En savoir plus </a>
+									<h3>NetO'Centre</h3>
+									<p>Qu’est-ce que c'est ?</p>
+									<p>Quels sont les services et applications disponibles ?</p>
+									<a class="readmore"
+										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=netocentre">En
+										savoir plus </a>
 								</div></li>
-							<li class="esco-accueil"><img src="/esco-accueil/img/thumb_region.jpg" />
+							<li><img src="/esco-accueil/img/thumb_region.jpg" alt="Région Centre"/>
 								<div class="esco-accueil meta">
-									<h3 class="esco-accueil">Région Centre</h3>
-									<p class="esco-accueil">Et prima post Osdroenam quam, ut dictum est ...</p>
-									<a class="readmore" href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=region">En savoir plus </a>
+									<h3>Région Centre</h3>
+									<p>Pour plus d'informations sur les dispositifs proposés par la	Région Centre aux ...</p>
+									<a class="readmore"
+										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=region">En
+										savoir plus </a>
 								</div></li>
 						</ul>
 					</div>

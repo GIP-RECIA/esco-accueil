@@ -52,9 +52,10 @@
 				<div id="content_netocentre" class="text">
 
 					<img src="/esco-accueil/img/agricole.jpg"
-						title="Enseignement Agricole">
+						alt="Enseignement Agricole – 100% Nature
+							– Formations aux métiers de l’agriculture, de la forêt, de la nature et des territoires" >
 					<H3>
-						<FONT color="#548dd4"><B>LES LYCÉES AGRICOLES … À L'ÈRE
+						<FONT color="#3F6AA5"><B>LES LYCÉES AGRICOLES … À L'ÈRE
 								DU NUMERIQUE !</B></FONT>
 					</H3>
 					<br>

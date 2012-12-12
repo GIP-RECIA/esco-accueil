@@ -52,9 +52,9 @@
 				<div id="content_netocentre" class="text">
 
 					<img src="/esco-accueil/img/academie.jpg"
-						title="Académie Orléans-Tours">
+						alt="Académie Orléans-Tours - Liberté - Égalité - Fraternité - République française">
 					<H3>
-						<FONT color="#548dd4"><B>Académie d'Orléans-Tours</B></FONT>
+						<FONT color="#3F6AA5"><B>Académie d'Orléans-Tours</B></FONT>
 					</H3>
 					<br>
 					<p>Le développement des usages numériques est une volonté forte

@@ -51,9 +51,9 @@
 
 				<div id="content_netocentre" class="text">
 
-					<img src="/esco-accueil/img/netocentre.jpg" title="NetOCentre">
+					<img src="/esco-accueil/img/netocentre.jpg" alt="NetO'Centre">
 					<H3>
-						<FONT COLOR="#548dd4"><B>Net O'Centre, qu'est-ce que
+						<FONT COLOR="#3F6AA5"><B>Net O'Centre, qu'est-ce que
 								c'est&nbsp;?</B></FONT>
 					</H3>
 					<br>
@@ -83,7 +83,7 @@
 					<P>Rentrez dans une nouvelle dimension avec Net O'Centre.</P>
 					<BR> <BR>
 					<H3>
-						<FONT COLOR="#548dd4"><B>Quels sont les services et
+						<FONT COLOR="#3F6AA5"><B>Quels sont les services et
 								applications disponibles&nbsp;? </B></FONT>
 					</H3>
 					<BR>

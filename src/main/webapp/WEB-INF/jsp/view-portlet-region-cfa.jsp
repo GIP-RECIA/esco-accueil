@@ -51,9 +51,9 @@
 
 				<div id="content_netocentre" class="text">
 
-						<img src="/esco-accueil/img/region.jpg" title="Région Centre">
+						<img src="/esco-accueil/img/region.jpg" alt="Région Centre">
                     <H3>
-                        <FONT COLOR="#548dd4"><B>La Région Centre</B></FONT>
+                        <FONT COLOR="#3F6AA5"><B>La Région Centre</B></FONT>
                     </H3>
                     <br>
 						<p>

@@ -53,10 +53,18 @@
 				<div id="content" class="esco-accueil">
 					<div id="slider" class="esco-accueil">
 						<ul>
-							<li><img src="/esco-accueil/img/netocentre.jpg"	title="NetOCentre"></li>
-							<li><img src="/esco-accueil/img/region.jpg"	title="Région Centre"></li>
-							<li><img src="/esco-accueil/img/academie.jpg" title="Académie Orléans-Tours"></li>
-							<li><img src="/esco-accueil/img/agricole.jpg" title="Enseignement Agricole"></li>
+							<li><img src="/esco-accueil/img/netocentre.jpg"	alt="NetO'Centre"></li>
+							<li><img src="/esco-accueil/img/region.jpg"
+								alt="Avec la Région Centre y'a vraiment de quoi sourire !
+							- toutes les informations sur www.jeunesocentre.fr
+							- Lycéens, Apprentis, Étudiants :  Livres et ordinateurs gratuits, Aides aux transports et équipements professionnels,
+							Voyages à l'étranger, Sorties à prix réduits
+							- Région Centre : Plus qu'une Région une chance pour l'éducation - www.regioncentre.fr"></li>
+							<li><img src="/esco-accueil/img/academie.jpg"
+								alt="Académie Orléans-Tours - Liberté - Égalité - Fraternité - République française"></li>
+							<li><img src="/esco-accueil/img/agricole.jpg"
+								alt="Enseignement Agricole – 100% Nature
+							– Formations aux métiers de l’agriculture, de la forêt, de la nature et des territoires"></li>
 						</ul>
 					</div>
 					<div id="navigation" class="esco-accueil">
@@ -70,7 +78,12 @@
 										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=netocentre">En
 										savoir plus </a>
 								</div></li>
-							<li><img src="/esco-accueil/img/thumb_region.jpg" />
+							<li><img src="/esco-accueil/img/thumb_region.jpg"
+								alt="Avec la Région Centre y'a vraiment de quoi sourire !
+							- toutes les informations sur www.jeunesocentre.fr
+							- Lycéens, Apprentis, Étudiants :  Livres et ordinateurs gratuits, Aides aux transports et équipements professionnels,
+							Voyages à l'étranger, Sorties à prix réduits
+							- Région Centre : Plus qu'une Région une chance pour l'éducation - www.regioncentre.fr" />
 								<div class="esco-accueil meta">
 									<h3>Région Centre</h3>
 									<p>La Région a la responsabilité des conditions matérielles offertes ...</p>
@@ -78,7 +91,8 @@
 										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=region">En
 										savoir plus </a>
 								</div></li>
-							<li><img src="/esco-accueil/img/thumb_academie.jpg" />
+							<li><img src="/esco-accueil/img/thumb_academie.jpg"
+								alt="Académie Orléans-Tours - Liberté - Égalité - Fraternité - République française" />
 								<div class="esco-accueil meta">
 									<h3>Académie Orléans-Tours</h3>
 									<p>Le développement des usages numériques est une volonté forte ...</p>
@@ -86,7 +100,8 @@
 										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=academie">En
 										savoir plus </a>
 								</div></li>
-							<li><img src="/esco-accueil/img/thumb_agricole.jpg" />
+							<li><img src="/esco-accueil/img/thumb_agricole.jpg" alt="Enseignement Agricole – 100% Nature
+							– Formations aux métiers de l’agriculture, de la forêt, de la nature et des territoires" />
 								<div class="esco-accueil meta">
 									<h3>Enseignement Agricole</h3>
 									<p>Les lycées agricoles ... à l'ère du numérique !</p>

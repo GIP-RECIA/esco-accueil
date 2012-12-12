@@ -51,9 +51,14 @@
 
 				<div id="content_netocentre" class="text">
 
-					<img src="/esco-accueil/img/region.jpg" title="Région Centre">
+					<img src="/esco-accueil/img/region.jpg"
+						alt="Avec la Région Centre y'a vraiment de quoi sourire !
+							- toutes les informations sur www.jeunesocentre.fr
+							- Lycéens, Apprentis, Étudiants :  Livres et ordinateurs gratuits, Aides aux transports et équipements professionnels,
+							Voyages à l'étranger, Sorties à prix réduits
+							- Région Centre : Plus qu'une Région une chance pour l'éducation - www.regioncentre.fr">
 					<H3>
-						<FONT COLOR="#548dd4"><B>La Région Centre</B></FONT>
+						<FONT COLOR="#3F6AA5"><B>La Région Centre</B></FONT>
 				    </H3>
 					<br>
 					<p>La Région a la responsabilité des conditions matérielles
@@ -78,7 +83,7 @@
 						structures mises en place :</p>
 					<br>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#548dd4">2007</FONT> - lancement d'un service en
+						<FONT COLOR="#3F6AA5">2007</FONT> - lancement d'un service en
 						ligne d'accompagnement scolaire gratuit proposé aux élèves et
 						enseignants de plusieurs établissements volontaires, pour lequel
 						il s'agit d'offrir aux élèves une nouvelle manière d'apprendre et
@@ -86,23 +91,23 @@
 						plaisir d'apprendre.
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#548dd4">2008</FONT> - phase d'expérimentation dans
+						<FONT COLOR="#3F6AA5">2008</FONT> - phase d'expérimentation dans
 						le déploiement des Espaces Numériques de Travail dans tous les
 						lycées publics de la région.
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#548dd4">2010</FONT> - lancement d'une
+						<FONT COLOR="#3F6AA5">2010</FONT> - lancement d'une
 						expérimentation unique au niveau national de manuels scolaires
 						numériques depuis la rentrée scolaire 2010 dans 10 lycées de la
 						région.
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#548dd4">2011</FONT> - début du déploiement des
+						<FONT COLOR="#3F6AA5">2011</FONT> - début du déploiement des
 						Espaces Numériques de Travail Net O'Centre dans les Centres de
 						Formation d'Apprentis.
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#548dd4">2012</FONT> - dernière phase du plan de
+						<FONT COLOR="#3F6AA5">2012</FONT> - dernière phase du plan de
 						déploiement de la fibre optique dans les lycées publics. À la
 						rentrée 2012, 95% des lycées bénéficiet d'une connexion au
 						minimum à 10 méga.

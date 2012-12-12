@@ -43,7 +43,7 @@
 /* Liens */
 
 .esco-accueil a {
-	color: #00C0FF;
+	color: #84B0DB!important;
 	text-decoration: none;
 }
 
@@ -57,7 +57,7 @@
 	margin:0;
 	padding:0;
 	border: 0;
-} 
+}
 
 /* Conteneur */
 
@@ -69,7 +69,8 @@
 	border:1px solid white;
 	float:center;
 	width:1000px;
-	height:500px;
+	/*height:500px;*/
+	height:auto;
 }
 
 .esco-accueil div#content_netocentre {
@@ -127,7 +128,7 @@
 
 .esco-accueil p {
 	margin:0;
-	text-align: justify;
+	text-align: left;
 }
 
 /* Mises en valeur */
