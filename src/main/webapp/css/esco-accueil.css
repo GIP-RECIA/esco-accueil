@@ -62,7 +62,6 @@
 /* Conteneur */
 
 .esco-accueil div#content {
-	background:#39414A;
 	position:relative;
 	margin:auto;
 	color: #d5d5d5;
@@ -85,6 +84,7 @@
 	margin:0;
 }
 .esco-accueil div#navigation {
+	background:#39414A;
 	float:right;
 }
 .esco-accueil div#navigation li{
