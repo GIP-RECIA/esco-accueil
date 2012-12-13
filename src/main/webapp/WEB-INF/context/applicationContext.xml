@@ -56,9 +56,9 @@
 				<value>.*Firefox/([4-9]|([0-9]{2,})).*</value>
 				<value>.*msie 8.0.*</value>
 				<value>.*msie 9.0.*</value>
-				<value>.*Iceweasel.*</value>
+				<value>.*Iceweasel/([2-9]|[0-9]{2,}).*</value>
 				<value>.*Chrome/([0-9]{2,}).*</value>
-				<value>.*Opera/([0-9]{2,}).*</value>
+				<value>.*Opera/(9|([0-9]{2,})).*</value>
 				<value>.*Version/([5-9]|([0-9]{2,})).*Safari.*</value>
 				<value>.*iPad.*</value>
 				<value>.*iPhone.*</value>

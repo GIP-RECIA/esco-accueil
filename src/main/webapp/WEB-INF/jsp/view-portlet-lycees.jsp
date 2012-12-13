@@ -111,7 +111,7 @@
 								</div></li>
 						</ul>
 					</div>
-					<div id="nojs" class="error">
+					<div id="nojs" class="erreur">
 						<span>
 							<spring:message code="error.javascriptengine" />
 						</span>
