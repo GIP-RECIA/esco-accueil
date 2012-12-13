@@ -39,6 +39,9 @@
 	});
 
 	$(document).ready(function(){
+		$('#slider').css('display', 'block');
+		$('#navigation').css('display', 'block');
+		$('#nojs').css('display', 'none');
 		$('#slider img').css("position", "absolute");
 		$('#slider img:gt(0)').hide();
 		$('#navigation li:first').addClass('current-navigation');

@@ -50,7 +50,7 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content" class="esco-accueil">
+				<div id="content">
 					<div id="slider" class="esco-accueil">
 						<ul>
 							<li><img src="/esco-accueil/img/netocentre.jpg"	alt="NetO'Centre"></li>
@@ -111,8 +111,12 @@
 								</div></li>
 						</ul>
 					</div>
+					<div id="nojs" class="error">
+						<span>
+							<spring:message code="error.javascriptengine" />
+						</span>
+					</div>
 				</div>
-
 			</div>
 
 		</div>

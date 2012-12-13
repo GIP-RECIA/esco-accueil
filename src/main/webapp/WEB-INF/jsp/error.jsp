@@ -41,7 +41,15 @@
 
   <div class="portlet-section-body">
     <p>
-      <spring:message code="error.description" />
+      <c:choose>
+      	<c:when test="${error==null || error.code==null}">
+      		<spring:message code="error.general" />
+      	</c:when>
+      	<c:otherwise>
+      		<spring:message code="${error.code}" />
+      	</c:otherwise>
+      </c:choose>
+
     </p>
   </div>
 

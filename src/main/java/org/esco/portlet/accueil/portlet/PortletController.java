@@ -22,7 +22,9 @@ import javax.portlet.RenderResponse;
 
 
 import org.apache.log4j.Logger;
+import org.esco.portlet.accueil.services.UserAgentInspector;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -35,20 +37,24 @@ import org.springframework.web.portlet.ModelAndView;
 @Scope("request")
 public class PortletController {
 
-	protected Logger log = Logger.getLogger(PortletController.class);
 
-	public static final String PREF_CONTEXT_VIEW = "contextView";
+	private Logger log = Logger.getLogger(PortletController.class);
 
-	public static final String LYCEES_VIEW = "lycees";
-	public static final String CFA_VIEW = "cfa";
-	public static final String NETOCENTRE_VIEW = "netocentre";
-	public static final String AGRICOLE_VIEW = "agricole";
-	public static final String STANDARD_VIEW = "standard";
-	public static final String MOBILE_VIEW = "mobile";
-	public static final String WAI_VIEW = "wai";
+	@Autowired
+	private UserAgentInspector userAgentInspector;
+
+	private static final String PREF_CONTEXT_VIEW = "contextView";
+
+	private static final String LYCEES_VIEW = "lycees";
+	private static final String CFA_VIEW = "cfa";
+	private static final String NETOCENTRE_VIEW = "netocentre";
+	private static final String AGRICOLE_VIEW = "agricole";
+	private static final String STANDARD_VIEW = "standard";
+	private static final String MOBILE_VIEW = "mobile";
+	private static final String WAI_VIEW = "wai";
 
     @RequestMapping("VIEW")
-    protected ModelAndView renderView(RenderRequest request, RenderResponse response) throws Exception {
+    public ModelAndView renderView(RenderRequest request, RenderResponse response) throws Exception {
     	//this.init(request, response);
         final PortletPreferences prefs = request.getPreferences();
     	String defaultPortletView = prefs.getValue(PREF_CONTEXT_VIEW,LYCEES_VIEW);
@@ -57,6 +63,9 @@ public class PortletController {
     		log.debug("Context selected from portlet preference : " + defaultPortletView);
     	}
 
+    	if (userAgentInspector.isAuthorized(request)) {
+    		return this.browserError(request, response);
+    	}
 	    /*if(userAgentInspector.isMobile(request)) {
 			return this.browseMobile(request, response, defaultPath);
 	    } else {
@@ -65,50 +74,27 @@ public class PortletController {
 	    	else if(WAI_VIEW.equals(defaultPortletView))
 	    		return this.browseWai(request, response, defaultPath, null);
 	    	else*/
-	    		return this.browseStandard(request, response, defaultPortletView);
+	    return this.browseStandard(request, response, defaultPortletView);
 	    //}
     }
 
 	@RequestMapping(value = {"VIEW"}, params = {"action=browseStandard"})
     public ModelAndView browseStandard(RenderRequest request, RenderResponse response, final String view) {
-    	//this.init(request, response);
-        //final PortletPreferences prefs = request.getPreferences();
-		//boolean useDoubleClick = "true".equals(prefs.getValue(PREF_USE_DOUBLE_CLICK, "true"));
-    	//boolean useCursorWaitDialog = "true".equals(prefs.getValue(PREF_USE_CURSOR_WAIT_DIALOG, "false"));
-
-		/*ModelMap model = new ModelMap();
-    	model.put("sharedSessionId", sharedSessionId);
-		model.put("useDoubleClick", useDoubleClick);
-		model.put("useCursorWaitDialog", useCursorWaitDialog);
-		if(dir == null)
-			dir = "";
-		model.put("defaultPath", dir);*/
     	return new ModelAndView("view-portlet-"+view, new ModelMap());
+    }
+
+	@RequestMapping(value = {"VIEW"}, params = {"action=browserError"})
+    public ModelAndView browserError(RenderRequest request, RenderResponse response) {
+		ModelMap model = new ModelMap();
+    	model.put("error.code", "error.browsercompatibility");
+
+    	return new ModelAndView("error", model);
     }
 
 	/*@RequestMapping(value = {"VIEW"}, params = {"action=browseMobile"})
     public ModelAndView browseMobile(RenderRequest request, RenderResponse response,
     								@RequestParam String dir) {
-    	this.init(request, response);
 
-		String decodedDir = pathEncodingUtils.decodeDir(dir);
-
-		ModelMap model;
-		if( !(dir == null || dir.length() == 0 || decodedDir.equals(JsTreeFile.ROOT_DRIVE)) ) {
-			if(this.serverAccess.formAuthenticationRequired(decodedDir, userParameters)) {
-				ListOrderedMap parentPathes = pathEncodingUtils.getParentsEncPathes(decodedDir, null, null);
-				// we want to get the (last-1) key of sortedmap "parentPathes"
-				String parentDir = (String)parentPathes.get(parentPathes.size()-2);
-				model = new ModelMap("currentDir", dir);
-				model.put("parentDir", parentDir);
-				model.put("username", this.serverAccess.getUserPassword(decodedDir, userParameters).getUsername());
-				model.put("password", this.serverAccess.getUserPassword(decodedDir, userParameters).getPassword());
-				model.put("sharedSessionId", sharedSessionId);
-				return new ModelAndView("authenticationForm-portlet-mobile", model);
-			}
-		}
-		model = browse(dir);
-		model.put("sharedSessionId", sharedSessionId);
         return new ModelAndView("view-portlet-mobile", model);
     }
 
@@ -116,36 +102,7 @@ public class PortletController {
     public ModelAndView browseWai(RenderRequest request, RenderResponse response,
     								@RequestParam(required=false) String dir,
     								@RequestParam(required=false) String msg) {
-		this.init(request, response);
 
-		String decodedDir = pathEncodingUtils.decodeDir(dir);
-
-		if(!serverAccess.isInitialized(userParameters)) {
-			serverAccess.initializeServices(userParameters);
-		}
-
-		ModelMap model;
-		if( !(dir == null || dir.length() == 0 || decodedDir.equals(JsTreeFile.ROOT_DRIVE)) ) {
-			if(this.serverAccess.formAuthenticationRequired(decodedDir, userParameters)) {
-				ListOrderedMap parentPathes = pathEncodingUtils.getParentsEncPathes(decodedDir, null, null);
-				// we want to get the (last-1) key of sortedmap "parentPathes"
-				String parentDir = (String)parentPathes.get(parentPathes.size()-2);				model = new ModelMap("currentDir", dir);
-				model.put("parentDir", parentDir);
-				model.put("username", this.serverAccess.getUserPassword(decodedDir, userParameters).getUsername());
-				model.put("password", this.serverAccess.getUserPassword(decodedDir, userParameters).getPassword());
-				if(msg != null)
-					model.put("msg",msg);
-				model.put("sharedSessionId", sharedSessionId);
-				return new ModelAndView("authenticationForm-portlet-wai", model);
-			}
-		}
-
-		model = browse(dir);
-		FormCommand command = new FormCommand();
-	    model.put("command", command);
-	    if(msg != null)
-	    	model.put("msg", msg);
-	    model.put("sharedSessionId", sharedSessionId);
         return new ModelAndView("view-portlet-wai", model);
     }*/
 
@@ -160,6 +117,14 @@ public class PortletController {
 	public ModelAndView renderHelpView(RenderRequest request, RenderResponse response) throws Exception {
 		ModelMap model = new ModelMap();
 		return new ModelAndView("help-portlet", model);
+	}
+
+	/**
+	 * Setter of attribute userAgentInspector.
+	 * @param userAgentInspector the attribute userAgentInspector to set
+	 */
+	public void setUserAgentInspector(UserAgentInspector userAgentInspector) {
+		this.userAgentInspector = userAgentInspector;
 	}
 
 }

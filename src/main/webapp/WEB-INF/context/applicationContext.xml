@@ -50,9 +50,24 @@
 
     <bean id="requiredAnnotationBeanPostProcessor" class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
 
-	<!--
-	<bean id="userAgentInspector" class="org.esupportail.portlet.filemanager.services.UserAgentInspector">
-        <property name="userAgentMobile">
+	<bean id="userAgentInspector" class="org.esco.portlet.accueil.services.UserAgentInspector">
+		<property name="userAgentAutorized">
+			<list>
+				<value>.*Firefox/([4-9]|([0-9]{2,})).*</value>
+				<value>.*msie 8.0.*</value>
+				<value>.*msie 9.0.*</value>
+				<value>.*Iceweasel.*</value>
+				<value>.*Chrome/([0-9]{2,}).*</value>
+				<value>.*Opera/([0-9]{2,}).*</value>
+				<value>.*Version/([5-9]|([0-9]{2,})).*Safari.*</value>
+				<value>.*iPad.*</value>
+				<value>.*iPhone.*</value>
+				<value>.*Android.*</value>
+				<value>.*Safari.*Pre.*</value>
+		        <value>.*Nokia.*AppleWebKit.*</value>
+			</list>
+		</property>
+        <!-- <property name="userAgentMobile">
 		    <list>
 		        <value>.*iPhone.*</value>
 		        <value>.*Android.*</value>
@@ -60,6 +75,5 @@
 		        <value>.*Nokia.*AppleWebKit.*</value>
 		    </list>
         </property>
-    </bean>
-	 -->
+    </bean> -->
 </beans>
