@@ -85,7 +85,7 @@ public class PortletController {
 
 	@RequestMapping(value = {"VIEW"}, params = {"action=browserError"})
     public ModelAndView browserError(RenderRequest request, RenderResponse response) {
-    	return new ModelAndView("browsererror", new ModelMap());
+    	return new ModelAndView("browser-error", new ModelMap());
     }
 
 	/*@RequestMapping(value = {"VIEW"}, params = {"action=browseMobile"})
