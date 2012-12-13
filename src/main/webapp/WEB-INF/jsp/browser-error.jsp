@@ -33,7 +33,7 @@
 
 <div class="portlet-title">
 	<h2>
-		<spring:message code="error.title" />
+		<spring:message code="error.browsertitle" />
 	</h2>
 </div>
 
