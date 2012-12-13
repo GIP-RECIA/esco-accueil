@@ -28,30 +28,22 @@
 <portlet:defineObjects />
 
 <c:set var="n">
-  <portlet:namespace />
+	<portlet:namespace />
 </c:set>
 
 <div class="portlet-title">
-  <h2>
-    <spring:message code="error.title" />
-  </h2>
+	<h2>
+		<spring:message code="error.browsertitle" />
+	</h2>
 </div>
 
 <div class="portlet-section">
 
-  <div class="portlet-section-body">
-    <p>
-      <c:choose>
-      	<c:when test="${code_error==null}">
-      		<spring:message code="error.general" />
-      	</c:when>
-      	<c:otherwise>
-      		<spring:message code="${code_error}" />
-      	</c:otherwise>
-      </c:choose>
-
-    </p>
-  </div>
+	<div class="portlet-section-body">
+		<p>
+			<spring:message code="error.browsercompatibility" />
+		</p>
+	</div>
 
 </div>
 
