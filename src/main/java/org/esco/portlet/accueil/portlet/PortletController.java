@@ -63,7 +63,7 @@ public class PortletController {
     		log.debug("Context selected from portlet preference : " + defaultPortletView);
     	}
 
-    	if (userAgentInspector.isAuthorized(request)) {
+    	if (!userAgentInspector.isAuthorized(request)) {
     		return this.browserError(request, response);
     	}
 	    /*if(userAgentInspector.isMobile(request)) {
