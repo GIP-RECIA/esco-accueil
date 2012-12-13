@@ -63,7 +63,7 @@ public class UserAgentInspector implements InitializingBean {
             throw new IllegalArgumentException(msg);
         }
 
-        final String userAgent = req.getProperty("user-agent");
+        final String userAgent = req.getProperty("user-agent").toLowerCase();
         if (LOGGER.isDebugEnabled()){
         	LOGGER.debug("Access from user-agent : " + userAgent);
         }
@@ -97,7 +97,7 @@ public class UserAgentInspector implements InitializingBean {
 		Assert.notEmpty(userAgentAutorized, "Il est nécessaire de spécifier une liste de navigateurs compatibles !");
         // Compile our patterns
         for (String userAgent : userAgentAutorized) {
-            patterns.add(Pattern.compile(userAgent));
+            patterns.add(Pattern.compile(userAgent.toLowerCase()));
         }
     }
 }
