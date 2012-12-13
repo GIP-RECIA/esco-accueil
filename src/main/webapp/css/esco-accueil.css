@@ -140,8 +140,9 @@
 	background-repeat:no-repeat;
 }
 
-.erreur {
+.erreur, .esco-accueil .erreur {
 	background:#FFD5C7;
 	border:2px solid #c00 !important;
 	color:#000;
+	padding:10px;
 }
