@@ -149,4 +149,8 @@
 		</plugins>
 	</build>
 
+	<scm>
+		<connection>scm:git:ssh://git@github.com:GIP-RECIA/esco-accueil.git</connection>
+		<url>git:ssh://git@github.com:GIP-RECIA/esco-accueil.git</url>
+	</scm>
 </project>
