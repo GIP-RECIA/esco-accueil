@@ -74,6 +74,6 @@
 		        <value>.*Safari.*Pre.*</value>
 		        <value>.*Nokia.*AppleWebKit.*</value>
 		    </list>
-        </property>
-    </bean> -->
+        </property>-->
+    </bean>
 </beans>

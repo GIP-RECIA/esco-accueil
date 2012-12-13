@@ -42,11 +42,11 @@
   <div class="portlet-section-body">
     <p>
       <c:choose>
-      	<c:when test="${error==null || error.code==null}">
+      	<c:when test="${code_error==null}">
       		<spring:message code="error.general" />
       	</c:when>
       	<c:otherwise>
-      		<spring:message code="${error.code}" />
+      		<spring:message code="${code_error}" />
       	</c:otherwise>
       </c:choose>
 

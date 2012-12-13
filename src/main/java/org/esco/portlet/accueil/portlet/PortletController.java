@@ -86,7 +86,7 @@ public class PortletController {
 	@RequestMapping(value = {"VIEW"}, params = {"action=browserError"})
     public ModelAndView browserError(RenderRequest request, RenderResponse response) {
 		ModelMap model = new ModelMap();
-    	model.put("error.code", "error.browsercompatibility");
+    	model.put("code_error", "error.browsercompatibility");
 
     	return new ModelAndView("error", model);
     }
