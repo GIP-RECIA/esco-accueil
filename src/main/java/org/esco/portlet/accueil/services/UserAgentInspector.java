@@ -23,6 +23,7 @@ import java.util.regex.Pattern;
 import javax.portlet.PortletRequest;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.Priority;
 import org.esco.portlet.accueil.portlet.PortletController;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
@@ -74,6 +75,9 @@ public class UserAgentInspector implements InitializingBean {
                     break;
                 }
             }
+        }
+        if (!isAuthorized && LOGGER.isInfoEnabled()){
+        	LOGGER.info("User-Agent is not in the list of managed user-agent : " + userAgent);
         }
 
         return isAuthorized;
