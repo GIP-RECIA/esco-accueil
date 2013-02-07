@@ -42,7 +42,7 @@
 		isTpcAllowed(function(allowed) {
 			console.log(allowed);
 			$('#nojs').css('display', 'none');
-			if (allowed == true) {
+			if (allowed === true && navigator.cookieEnabled === true) {
 				$('#nocookies').css('display', 'none');
 				launchSlider();
 			}
