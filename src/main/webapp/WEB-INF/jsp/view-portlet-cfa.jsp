@@ -83,6 +83,11 @@
 							<spring:message code="error.javascriptengine" />
 						</span>
 					</div>
+					<div id="nocookies" class="erreur">
+						<span>
+							<spring:message code="error.cookiesengine" />
+						</span>
+					</div>
 				</div>
 
 			</div>

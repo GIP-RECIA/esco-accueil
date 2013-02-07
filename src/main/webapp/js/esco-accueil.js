@@ -39,9 +39,20 @@
 	});
 
 	$(document).ready(function(){
+		isTpcAllowed(function(allowed) {
+			console.log(allowed);
+			$('#nojs').css('display', 'none');
+			if (allowed == true) {
+				$('#nocookies').css('display', 'none');
+				launchSlider();
+			}
+		});
+	});
+
+	// main function for slider, must be launched when document is ready.
+	function launchSlider() {
 		$('#slider').css('display', 'block');
 		$('#navigation').css('display', 'block');
-		$('#nojs').css('display', 'none');
 		$('#slider img').css("position", "absolute");
 		$('#slider img:gt(0)').hide();
 		$('#navigation li:first').addClass('current-navigation');
@@ -53,8 +64,7 @@
 			doresize();
 		});
 		setInterval(auto, 5000);
-
-	});
+	}
 
 	function mouseenter(){
 		$('#navigation').find('li').mouseenter(function(e) {
@@ -247,5 +257,55 @@
 	function auto(){
 		$('a.next').trigger("click");
 	}
+
+	// function to test if third-party cookies are autorized by he user web browser
+	(function( window, undefined ) {
+
+		var isTpcAllowed = function( callback ) {
+
+		    callback = typeof callback === 'function' ? callback : $.noop;
+
+		    var currentdomain = window.location.hostname;
+		    var url = "https://www.touraine-eschool.fr/esco-apps-redirector/";
+		    if (currentdomain.substring(currentdomain.indexOf('.')) != ".netocentre.fr" ) {
+		        url = 'https://lycees.netocentre.fr/esco-apps-redirector/';
+		    }
+		    var phpSet = 'tpcallowed_set.php',
+		        phpGet = 'tpcallowed_get.php';
+
+		    $.ajax({
+		        url         : url + phpSet,
+		        dataType    : 'jsonp',
+		        success     : function( json ) {
+		            var name = json.name || null;
+		            if ( name ) {
+		                $.ajax({
+		                    url         : url + phpGet,
+		                    type        : 'post',
+		                    dataType    : 'jsonp',
+		                    data        : 'cookieName=' + name,
+		                    success     : function( json ) {
+		                        var allowed = json.allowed || null;
+		                        if ( allowed ) {
+		                            allowed = allowed === 'true' ? true : false;
+		                        }
+		                        callback.call(window, allowed);
+		                    },
+		                    error       : function() {
+		                        callback.call(window, null);
+		                    }
+		                });
+		            } else {
+		                callback.call(window, null);
+		            }
+		        },
+		        error       : function() {
+		            callback.call(window, null);
+		        }
+		    });
+		};
+
+		window.isTpcAllowed = isTpcAllowed;
+	})(window);
 
 })(jQuery);
