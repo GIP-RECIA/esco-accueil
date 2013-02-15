@@ -39,12 +39,15 @@
 	});
 
 	$(document).ready(function(){
+		$('#nojs').css('display', 'none');
+		launchSlider();
 		isTpcAllowed(function(allowed) {
-			console.log(allowed);
-			$('#nojs').css('display', 'none');
-			if (allowed === true && navigator.cookieEnabled === true) {
-				$('#nocookies').css('display', 'none');
-				launchSlider();
+			console.log("cookies and third-party cookies allowed :" + allowed);
+			if (navigator.cookieEnabled === false || allowed === false) {
+				$('#slider').css('display', 'none');
+				$('#navigation').css('display', 'none');
+				$('#nocookies').css('display', 'block');
+
 			}
 		});
 	});
@@ -58,7 +61,6 @@
 		$('#navigation li:first').addClass('current-navigation');
 
 		$('#content').parent().append('<div class=\"esco-accueil boutons\"><p><a class=\"prev\" href=\"#\">Précédent</a>  <a class=\"next\" href=\"#\">Suivant</a></p></div>');
-		//$('#content').waitForImages(imgonload());
 		imgonload();
 		$(window).resize(function(){
 			doresize();
@@ -72,14 +74,12 @@
 			// on désactive la navigation auto
 			//console.log("Désactivation de la navigation auto");
 			$('a.next').off('click');
-			//$('a.prev').off('click');
 			if (!$(this).hasClass('current-navigation')){
 				//console.log("not hasClass !");
 				var pos_suivant = $(this).index();
 				$('.current-navigation').removeClass('current-navigation');
 				$(this).addClass('current-navigation');
 				//console.log(($(this).height()-$(this).find('img').height())/2+"px");
-				//$(this).find('img').css('margin-top',($(this).height()-$(this).find('img').height())/2+"px");
 				var image_courante = $('#slider').find('img:visible').css('height',slider_img.height()).css('width',slider_img.width());
 				var image_suivante = $('#slider').find('li').eq(pos_suivant).children('img').css('height',slider_img.height()).css('width',slider_img.width());
 
@@ -99,9 +99,6 @@
 		});
 	}
 
-
-
-
 	function imgonload(){
 		var nb_img = $('#content img').length;
 		var doAllLoaded = function() {
@@ -110,8 +107,8 @@
 				nav_img = $('#navigation img:first');
 				totalWidth = slider_img.width()+nav_img.width()+$('.meta').width();
 				totalHeight = slider_img.height();
-				console.log("set totalWidth : " + totalWidth);
-				console.log("set totalHeight : " + totalHeight);
+				//console.log("set totalWidth : " + totalWidth);
+				//console.log("set totalHeight : " + totalHeight);
 				doresize();
 
 				mouseenter();
@@ -119,23 +116,23 @@
 				clicknext();
 				clickprev();
 			}
-		}
+		};
 
 		$('#content img').each(function() {
 			if ($(this).height() > 0) {
 				nb_img_loaded++;
-				console.log("image already loaded");
+				//console.log("image already loaded");
 				doAllLoaded();
 			} else {
 				$(this).on({
 					'load' : function() {
 						nb_img_loaded++;
-						console.log("nb image loaded = " + nb_img_loaded + "/" + nb_img);
+						console.log("number of pictures loaded = " + nb_img_loaded + "/" + nb_img);
 						doAllLoaded();
 					},
 					'error' : function() {
 						nb_img_loaded++;
-						console.log("image en erreur, nb image loaded = " + nb_img_loaded + "/" + nb_img);
+						console.log("pictures in error, number of pictures loaded = " + nb_img_loaded + "/" + nb_img);
 						doAllLoaded();
 					}
 				});
@@ -156,11 +153,8 @@
 				$('#slider').css('display', 'block');
 				nav_width = totalWidth-slider_img.width();
 			}
-			//nav_width = totalWidth-slider_img.width();
-			console.log("set nav_width : " + nav_width);
 			$('#content').css('height',totalHeight+'px');
 			$('#content').css('width',resizeWidth+'px');
-			//$('#content').css('margin-top',($(window).height() - totalHeight)/2+'px');
 			$('#slider').css('width',slider_img.width());
 			$('#navigation').css('width', nav_width+'px');
 			$('#navigation').css('height',totalHeight+'px');
@@ -169,7 +163,7 @@
 			// puis pour chaque li on ajuste les éléments le composant
 			var list_li = $('#navigation').find('li');
 			var li_height = totalHeight / 4;
-			console.log("set li_height : " + li_height);
+			//console.log("set li_height : " + li_height);
 
 			var img_width;
 			var img_height;
@@ -185,25 +179,23 @@
 					img_width = img.width();
 					img_height = img.height();
 					remain_width = nav_width-img_width;
-					//if (remain_width < min_width+img_width) remain_width=min_width+img_width;
-					console.log("set img_width : " + img_width);
-					console.log("set img_height : " + img_height);
-					console.log("set remain width : " + remain_width);
+					//console.log("set img_width : " + img_width);
+					//console.log("set img_height : " + img_height);
+					//console.log("set remain width : " + remain_width);
 				}
 				img.css('margin-top',(li_height-img_height)/2+"px");
 				img.css('width', img_width);
 				img.css('height', img_height);
 				img.closest('li').css('background-position', img_width + 1 + "px");
-				console.log("get img width : " + img_width);
+				//console.log("get img width : " + img_width);
 
 				// on traite le div
 				var meta = $(this).find('.meta');
 				meta.css('margin-top',(li_height-meta.height())/2+"px");
-				console.log("get remain_width : " + remain_width);
+				//console.log("get remain_width : " + remain_width);
 				var new_width = remain_width - 20
 				console.log("get new_remain_width : " +new_width);
 				meta.css('width', new_width  +"px");
-				//meta.css('margin-left',"15px");
 			});
 		}
 	}
@@ -258,7 +250,7 @@
 		$('a.next').trigger("click");
 	}
 
-	// function to test if third-party cookies are autorized by he user web browser
+	// function to test if third-party cookies are autorized by the user's web browser
 	(function( window, undefined ) {
 
 		var isTpcAllowed = function( callback ) {
@@ -266,9 +258,9 @@
 		    callback = typeof callback === 'function' ? callback : $.noop;
 
 		    var currentdomain = window.location.hostname;
-		    var url = "https://www.touraine-eschool.fr/esco-apps-redirector/";
+		    var url = window.location.protocol +'//www.touraine-eschool.fr/esco-apps-redirector/';
 		    if (currentdomain.substring(currentdomain.indexOf('.')) != ".netocentre.fr" ) {
-		        url = 'https://lycees.netocentre.fr/esco-apps-redirector/';
+		        url = window.location.protocol + '//lycees.netocentre.fr/esco-apps-redirector/';
 		    }
 		    var phpSet = 'tpcallowed_set.php',
 		        phpGet = 'tpcallowed_get.php';

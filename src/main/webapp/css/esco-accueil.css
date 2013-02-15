@@ -105,6 +105,9 @@
 	text-align:left;
 	padding: 0 5px 0 0;
 }
+.esco-accueil div#nocookies {
+	display:none;
+}
 .esco-accueil .boutons {
 	display:none;
 }
