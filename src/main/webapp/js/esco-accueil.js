@@ -24,7 +24,7 @@
 	var nav_img;
 	var min_width = 320;
 	var nb_img_loaded = 0;
-
+	var stopSlider = false;
 	//IE does not define this by default
 	if ("undefined" === typeof window.console)
 	{
@@ -47,7 +47,9 @@
 				$('#slider').css('display', 'none');
 				$('#navigation').css('display', 'none');
 				$('#nocookies').css('display', 'block');
-
+				stopSlider = true;
+			} else if (stopSlider === true) {
+				stopSlider = false;
 			}
 		});
 	});
@@ -141,6 +143,7 @@
 	}
 
 	function doresize(){
+		if (stopSlider === true) return;
 		if (nb_img_loaded == $('#content img').length){
 			var nav_width;
 			var resizeWidth = totalWidth;
@@ -247,6 +250,7 @@
 	}
 
 	function auto(){
+		if (stopSlider === true) return;
 		$('a.next').trigger("click");
 	}
 
