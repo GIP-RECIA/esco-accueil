@@ -109,7 +109,7 @@
 					<p style="margin-bottom: 0.3em !important;">
 						<FONT COLOR="#3F6AA5">2012</FONT> - dernière phase du plan de
 						déploiement de la fibre optique dans les lycées publics. À la
-						rentrée 2012, 95% des lycées bénéficiet d'une connexion au
+						rentrée 2012, 95% des lycées bénéficient d'une connexion au
 						minimum à 10 méga.
 					</p>
 
