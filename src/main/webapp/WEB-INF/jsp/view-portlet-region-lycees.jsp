@@ -27,11 +27,6 @@
 	<portlet:namespace />
 </c:set>
 
-<!-- Framework CSS  GIP Recia  For a bug in Chrome, important to load css
-    before javascript as some parts of JS Read the css files
-    See http://api.jquery.com/ready/ for further explanation
-    -->
-
 <link rel="stylesheet" href="/esco-accueil/css/esco-accueil.css"
 	type="text/css" media="screen, projection">
 
@@ -71,14 +66,15 @@
 					<br>
 					<p>Dès 2002, la Région Centre a câblé l'ensemble des lycées
 						suivant un schéma directeur approuvé par le Rectorat de l'académie
-						d'Orléans-Tours et la Région Centre. A l'heure actuelle l'ensemble
+						d'Orléans-Tours et la Région Centre. À l'heure actuelle l'ensemble
 						de ces équipements est supervisé par une plate forme de
 						télégestion. L'accès au réseau internet se fait par
 						l'intermédiaire d'un réseau très haut débit financé par le Conseil
 						régional.</p>
 					<br>
 					<p>Dès lors, la Région Centre a lancé en collaboration avec le
-						Rectorat et la DRAAF un certain nombre d'actions et de dispositifs
+						Rectorat et la DRAAF (Direction Régionale de l'Alimentation de
+						l'Agriculture et de la Forêt) un certain nombre d'actions et de dispositifs
 						cohérents visant à développer les usages TICE et utiliser les
 						structures mises en place :</p>
 					<br>
@@ -112,7 +108,6 @@
 						rentrée 2012, 95% des lycées bénéficient d'une connexion au
 						minimum à 10 méga.
 					</p>
-
 					<br>
 					<p>
 						Pour plus d'informations sur les dispositifs proposés par la

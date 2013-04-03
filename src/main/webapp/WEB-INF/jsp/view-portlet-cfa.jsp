@@ -27,11 +27,6 @@
 	<portlet:namespace />
 </c:set>
 
-<!-- Framework CSS  GIP Recia  For a bug in Chrome, important to load css
-    before javascript as some parts of JS Read the css files
-    See http://api.jquery.com/ready/ for further explanation
-    -->
-
 <link rel="stylesheet" href="/esco-accueil/css/esco-accueil.css"
 	type="text/css" media="screen, projection">
 
@@ -55,6 +50,7 @@
 						<ul>
 							<li><img src="/esco-accueil/img/netocentre-cfa.jpg"	alt="NetO'Centre"></li>
 							<li><img src="/esco-accueil/img/region.jpg" alt="Région Centre"></li>
+							<li><img src="/esco-accueil/img/apprentissage.jpg" alt="Apprentissage"></li>
 						</ul>
 					</div>
 					<div id="navigation" class="esco-accueil">
@@ -74,6 +70,15 @@
 									<p>Pour plus d'informations sur les dispositifs proposés par la	Région Centre aux ...</p>
 									<a class="readmore"
 										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=region">En
+										savoir plus </a>
+								</div></li>
+							<li><img src="/esco-accueil/img/thumb_apprentissage.jpg" alt="Apprentissage"/>
+								<div class="esco-accueil meta">
+									<h3>Apprentissage</h3>
+									<p>Qu’est-ce que c'est ?</p>
+									<p>Comment s’organise la formation ?</p>
+									<a class="readmore"
+										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=apprentissage">En
 										savoir plus </a>
 								</div></li>
 						</ul>

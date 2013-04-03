@@ -27,11 +27,6 @@
 	<portlet:namespace />
 </c:set>
 
-<!-- Framework CSS  GIP Recia  For a bug in Chrome, important to load css
-    before javascript as some parts of JS Read the css files
-    See http://api.jquery.com/ready/ for further explanation
-    -->
-
 <link rel="stylesheet" href="/esco-accueil/css/esco-accueil.css"
 	type="text/css" media="screen, projection">
 
@@ -51,7 +46,7 @@
 
 				<div id="content_netocentre" class="text">
 
-					<img src="/esco-accueil/img/netocentre.jpg" alt="NetO'Centre">
+					<img src="/esco-accueil/img/netocentre.jpg" alt="Net O'Centre">
 					<H3>
 						<FONT COLOR="#3F6AA5"><B>Net O'Centre, qu'est-ce que
 								c'est&nbsp;?</B></FONT>
@@ -73,7 +68,7 @@
 						informations concernant la scolarité de leur enfant (gestion des
 						notes, des absences …).</P>
 						<BR>
-					<P>A partir de la collaboration entre le Rectorat
+					<P>À partir de la collaboration entre le Rectorat
 						Orléans-Tours, la DRAAF (Direction Régionale de l'Alimentation de
 						l'Agriculture et de la Forêt), le GIP RECIA (Région Centre
 						Interactive) et la Région Centre, Net O'Centre est accessible
