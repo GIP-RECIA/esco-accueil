@@ -57,7 +57,7 @@
 								c'est&nbsp;?</B></FONT>
 					</H3>
 					<br>
-					<P>L'Espace Numérique de Travail Net O'Centre redynamise la
+					<P>L'Espace Numérique de Travail Net O'Centre renforce la
 						formation par apprentissage en rapprochant l'apprenti, le CFA et
 						l'entreprise.</P>
 						<BR>
@@ -66,7 +66,7 @@
 						ligne, de connaitre les notes et les absences, d'accéder à la
 						formation ouverte à distance.</P>
 						<BR>
-					<P>La Région Centre ouvre un horizon innovant pour
+					<P>La Région Centre ouvre un nouvel horizon innovant pour
 						l'apprentissage en permettant le numérique dans les liens entre
 						les apprenants, les parents, les formateurs et les maitres
 						d'apprentissage.</P>
