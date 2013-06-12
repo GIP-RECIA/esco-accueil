@@ -75,7 +75,7 @@
 									<p>Qu’est-ce que c'est ?</p>
 									<p>Quels sont les services et applications disponibles ?</p>
 									<a class="readmore"
-										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=netocentre">En
+										href="/portail/f/netocentre">En
 										savoir plus </a>
 								</div></li>
 							<li><img src="/esco-accueil/img/thumb_region.jpg"
@@ -88,7 +88,7 @@
 									<h3>Région Centre</h3>
 									<p>La Région a la responsabilité des conditions matérielles offertes ...</p>
 									<a class="readmore"
-										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=region">En
+										href="/portail/f/region">En
 										savoir plus </a>
 								</div></li>
 							<li><img src="/esco-accueil/img/thumb_academie.jpg"
@@ -97,7 +97,7 @@
 									<h3>Académie Orléans-Tours</h3>
 									<p>Le développement des usages numériques est une volonté forte ...</p>
 									<a class="readmore"
-										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=academie">En
+										href="/portail/f/academie">En
 										savoir plus </a>
 								</div></li>
 							<li><img src="/esco-accueil/img/thumb_agricole.jpg" alt="Enseignement Agricole – 100% Nature
@@ -106,7 +106,7 @@
 									<h3>Enseignement Agricole</h3>
 									<p>Les lycées agricoles ... à l'ère du numérique !</p>
 									<a class="readmore"
-										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=agricole">En
+										href="/portail/f/agricole">En
 										savoir plus </a>
 								</div></li>
 						</ul>

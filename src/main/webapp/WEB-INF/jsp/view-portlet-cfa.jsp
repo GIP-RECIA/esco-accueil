@@ -61,7 +61,7 @@
 									<p>Qu’est-ce que c'est ?</p>
 									<p>Quels sont les services et applications disponibles ?</p>
 									<a class="readmore"
-										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=netocentre">En
+										href="/portail/f/netocentre">En
 										savoir plus </a>
 								</div></li>
 							<li><img src="/esco-accueil/img/thumb_region.jpg" alt="Région Centre"/>
@@ -69,7 +69,7 @@
 									<h3>Région Centre</h3>
 									<p>Pour plus d'informations sur les dispositifs proposés par la	Région Centre aux ...</p>
 									<a class="readmore"
-										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=region">En
+										href="/portail/f/region">En
 										savoir plus </a>
 								</div></li>
 							<li><img src="/esco-accueil/img/thumb_apprentissage.jpg" alt="Apprentissage"/>
@@ -78,7 +78,7 @@
 									<p>Qu’est-ce que c'est ?</p>
 									<p>Comment s’organise la formation ?</p>
 									<a class="readmore"
-										href="/netocentre/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=apprentissage">En
+										href="/portail/f/apprentissage">En
 										savoir plus </a>
 								</div></li>
 						</ul>
