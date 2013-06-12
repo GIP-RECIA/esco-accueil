@@ -23,6 +23,22 @@
 		</repository>
 	</repositories>
 
+	<distributionManagement>
+                <!-- Publish versioned releases here -->
+                <repository>
+                        <id>esco</id>
+                        <name>releases</name>
+                        <url>http://www.esco-portail.org/nexus/content/repositories/releases/</url>
+                </repository>
+
+                <!-- Publish snapshots here -->
+                <snapshotRepository>
+                        <id>esco</id>
+                        <name>snapshots</name>
+                        <url>http://www.esco-portail.org/nexus/content/repositories/snapshots/</url>
+                </snapshotRepository>
+        </distributionManagement>
+
 	<dependencies>
 
 		<dependency>

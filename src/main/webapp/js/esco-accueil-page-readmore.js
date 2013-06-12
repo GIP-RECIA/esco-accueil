@@ -23,6 +23,7 @@
 			console.log("img_height : " + new_height);
 			img.css('width', new_width);
 			img.css('height', new_height);
+			img.parent().css("min-height", new_height);
 		}
 	});
 })(jQuery);
