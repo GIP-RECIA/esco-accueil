@@ -16,7 +16,7 @@
 		function doresize(img) {
 
 			var old_width = img.width();
-			var new_width = $('.portlet-section').width() * 0.20;
+			var new_width = $('.esco-accueil .portlet-section').width() * 0.20;
 			var ratio = old_width / new_width;
 			var new_height = img.height() / ratio;
 			console.log("img_width : " + new_width);
