@@ -40,12 +40,24 @@
 
 	$(document).ready(function(){
 		$('#nojs').css('display', 'none');
-		launchSlider();
+		var CLG37 = false;
+		if ($('#text_CLG37').length >0 ){
+			$('#text_CLG37').css('display', 'block');
+			$('#img_CLG37').css('display', 'block');
+			CLG37 = true;
+		} else {
+			launchSlider();
+		}
 		isTpcAllowed(function(allowed) {
 			console.log("cookies and third-party cookies allowed :" + allowed);
 			if (navigator.cookieEnabled === false || allowed === false) {
-				$('#slider').css('display', 'none');
-				$('#navigation').css('display', 'none');
+				if (!CLG37) {
+					$('#slider').css('display', 'none');
+					$('#navigation').css('display', 'none');
+				} else {
+					$('#text_CLG37').css('display', 'none');
+					$('#img_CLG37').css('display', 'none');
+				}
 				$('#nocookies').css('display', 'block');
 				stopSlider = true;
 			} else if (stopSlider === true) {
