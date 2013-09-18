@@ -50,9 +50,9 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text">
+				<div id="content_netocentre" class="text" style="height: 300px">
 
-					<div style="padding: 0px 50px 0px 15px; float: left; width: 40%; height: 282px; font-family: Arial,Helvetica,sans-serif; font-size: 11pt;">
+					<div id="text_CLG37" style="padding: 0px 50px 0px 15px; float: left; width: 40%; height: 282px; font-family: Arial,Helvetica,sans-serif; font-size: 11pt;">
 						<br>
 						<br>
 						<strong>Bienvenue sur l'espace de travail Touraine-eschool.fr</strong>
@@ -66,8 +66,18 @@
 						<br>
 						<br>
 					</div>
-					<div style="float: left; margin-left: 1px; width: 40%;">
+					<div id="img_CLG37" style="float: left; margin-left: 1px; width: 40%;">
 						<img src="/esco-accueil/img/clg37-visuel-ENT.jpg" alt="L'ENT Touraine-eschool.fr" style="width: 500px;">
+					</div>
+					<div id="nojs" class="erreur">
+						<span>
+							<spring:message code="error.javascriptengine" />
+						</span>
+					</div>
+					<div id="nocookies" class="erreur">
+						<span>
+							<spring:message code="error.cookiesengine" />
+						</span>
 					</div>
 				</div>
 
@@ -78,6 +88,6 @@
 	</div>
 
 	<script type="text/javascript"
-		src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>
+		src="/esco-accueil/js/esco-accueil.js"></script>
 
 </div>

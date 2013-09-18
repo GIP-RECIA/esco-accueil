@@ -41,11 +41,15 @@
 	$(document).ready(function(){
 		$('#nojs').css('display', 'none');
 		launchSlider();
+		$('#text_clg37').css('display', 'block');
+		$('#img_clg37').css('display', 'block');
 		isTpcAllowed(function(allowed) {
 			console.log("cookies and third-party cookies allowed :" + allowed);
 			if (navigator.cookieEnabled === false || allowed === false) {
 				$('#slider').css('display', 'none');
 				$('#navigation').css('display', 'none');
+				$$('#text_clg37').css('display', 'none');
+				$('#img_clg37').css('display', 'none');
 				$('#nocookies').css('display', 'block');
 				stopSlider = true;
 			} else if (stopSlider === true) {
