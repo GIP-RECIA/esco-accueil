@@ -47,6 +47,7 @@ public class PortletController {
 
 	private static final String LYCEES_VIEW = "lycees";
 	private static final String CFA_VIEW = "cfa";
+	private static final String CLG37_VIEW = "clg37";
 	private static final String NETOCENTRE_VIEW = "netocentre";
 	private static final String AGRICOLE_VIEW = "agricole";
 	private static final String STANDARD_VIEW = "standard";
