@@ -7,16 +7,10 @@
 	<name>esco-accueil</name>
 
 	<repositories>
-		<!-- <repository> <id>displaytag</id> <url>http://displaytag.sourceforge.net/m2repo/</url>
-			</repository> -->
 		<repository>
 			<id>esco-all</id>
 			<url>http://www.esco-portail.org/nexus/content/groups/public</url>
 		</repository>
-		<!-- <repository> <id>esco-snapshots</id> <url>http://www.esco-portail.org/nexus/content/repositories/snapshots</url>
-			</repository> <repository> <id>esco-releases</id> <url>http://www.esco-portail.org/nexus/content/repositories/releases</url>
-			</repository> <repository> <id>esup-snapshots</id> <url>https://mvn.esup-portail.org/content/repositories/snapshots</url>
-			</repository> -->
 		<repository>
 			<id>esup</id>
 			<url>https://mvn.esup-portail.org/content/repositories/releases</url>
