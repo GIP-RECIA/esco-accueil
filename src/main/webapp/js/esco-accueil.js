@@ -133,24 +133,21 @@
 		};
 
 		$('#content img').each(function() {
-			if ($(this).height() > 0) {
-				nb_img_loaded++;
-				//console.log("image already loaded");
-				doAllLoaded();
-			} else {
-				$(this).on({
-					'load' : function() {
-						nb_img_loaded++;
-						console.log("number of pictures loaded = " + nb_img_loaded + "/" + nb_img);
-						doAllLoaded();
-					},
-					'error' : function() {
-						nb_img_loaded++;
-						console.log("pictures in error, number of pictures loaded = " + nb_img_loaded + "/" + nb_img);
-						doAllLoaded();
-					}
-				});
-			}
+			// NOTE : modifications, pb chargement img, le cache IE fait que l'appel à la méthode load ne se fait pas,
+			// le fait de changer la source de l'image après chargement fera que le cache ne sera pas utilisé.
+			var new_image_source = ($(this).attr('src'));
+			$(this).on({
+				'load' : function() {
+					nb_img_loaded++;
+					console.log("number of pictures loaded = " + nb_img_loaded + "/" + nb_img);
+					doAllLoaded();
+				},
+				'error' : function() {
+					nb_img_loaded++;
+					console.log("pictures in error, number of pictures loaded = " + nb_img_loaded + "/" + nb_img);
+					doAllLoaded();
+				}
+			}).attr('src', new_image_source);
 		});
 	}
 
