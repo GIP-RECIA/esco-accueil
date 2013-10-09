@@ -58,11 +58,12 @@
 					<br>
 					<p>La Région a la responsabilité des conditions matérielles
 						offertes aux équipes éducatives et aux lycéens. Elle souhaite
-						offrir les conditions les meilleures pour la réussite des lycéens
-						à travers ses missions de construction, d'entretien et
-						d'équipement des locaux mais aussi de restauration et
-						d'hébergement des élèves et d'accompagnement des projets éducatifs
-						mis en place par les établissements.</p>
+						offrir les conditions les meilleures pour la réussite des lycéens,
+						sans oublier celle des apprentis et des étudiants, à travers ses
+						missions de construction, d'entretien et d'équipement des locaux
+						mais aussi de restauration et d'hébergement des élèves et
+						d'accompagnement des projets éducatifs mis en place par les
+						établissements.</p>
 					<br>
 					<p>Dès 2002, la Région Centre a câblé l'ensemble des lycées
 						suivant un schéma directeur approuvé par le Rectorat de l'académie
@@ -74,39 +75,21 @@
 					<br>
 					<p>Dès lors, la Région Centre a lancé en collaboration avec le
 						Rectorat et la DRAAF (Direction Régionale de l'Alimentation de
-						l'Agriculture et de la Forêt) un certain nombre d'actions et de dispositifs
-						cohérents visant à développer les usages TICE et utiliser les
-						structures mises en place :</p>
+						l'Agriculture et de la Forêt) un certain nombre d'actions et de
+						dispositifs cohérents visant à développer les usages TICE et
+						utiliser les services mis en place tels que :</p>
 					<br>
-					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#3F6AA5">2007</FONT> - lancement d'un service en
-						ligne d'accompagnement scolaire gratuit proposé aux élèves et
-						enseignants de plusieurs établissements volontaires, pour lequel
-						il s'agit d'offrir aux élèves une nouvelle manière d'apprendre et
-						de réviser sur Internet en combinant interactivité, efficacité et
-						plaisir d'apprendre.
+					 <p style="margin-bottom: 0.3em !important;">
+						- service en ligne d'accompagnement scolaire dans plusieurs établissements volontaires,
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#3F6AA5">2008</FONT> - phase d'expérimentation dans
-						le déploiement des Espaces Numériques de Travail dans tous les
-						lycées publics de la région.
+						- Espaces Numériques de Travail Net O'Centre dans les lycées publics et les Centres de Formation d'Apprentis de la région Centre,
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#3F6AA5">2010</FONT> - lancement d'une
-						expérimentation unique au niveau national de manuels scolaires
-						numériques depuis la rentrée scolaire 2010 dans 10 lycées de la
-						région.
+						- manuels scolaires numériques,
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#3F6AA5">2011</FONT> - début du déploiement des
-						Espaces Numériques de Travail Net O'Centre dans les Centres de
-						Formation d'Apprentis.
-					</p>
-					<p style="margin-bottom: 0.3em !important;">
-						<FONT COLOR="#3F6AA5">2012</FONT> - dernière phase du plan de
-						déploiement de la fibre optique dans les lycées publics. À la
-						rentrée 2012, 95% des lycées bénéficient d'une connexion au
-						minimum à 10 méga.
+						- déploiement de la fibre optique dans les lycées publics.
 					</p>
 					<br>
 					<p>
