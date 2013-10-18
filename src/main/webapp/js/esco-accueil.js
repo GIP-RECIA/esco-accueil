@@ -156,9 +156,9 @@
 		if (nb_img_loaded == $('#content img').length){
 			var nav_width;
 			var resizeWidth = totalWidth;
-			if ((resizeWidth + 50) > $(window).width()) {
+			if ((resizeWidth + 10) > $(".esco-accueil").width()) {
 				$('#slider').css('display', 'none');
-				nav_width = (($(window).width()*2)/3);
+				nav_width = (($(".esco-accueil").width()*2)/3);
 				if (nav_width < min_width) nav_width=min_width;
 				resizeWidth = nav_width;
 			} else {
