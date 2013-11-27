@@ -75,7 +75,7 @@
 								alt="Collège : le Conseil général d'Indre-et-Loire crée les conditions de la réussite" />
 								<div class="esco-accueil meta">
 									<h3>Conseil général d'Indre-et-Loire</h3>
-									<p>Collège : le Conseil général d'Indre-et-Loire crée les conditions de la réussite ...</p>
+									<p>Le Conseil général d'Indre-et-Loire crée les conditions de la réussite ...</p>
 									<a class="readmore"
 										href="/portail/f/cg37">En
 										savoir plus </a>
