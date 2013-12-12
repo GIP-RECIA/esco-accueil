@@ -81,6 +81,9 @@
 	border:0;
 	display: none;
 }
+.esco-accueil .clg37 div#slider {
+	float:right;
+}
 .esco-accueil div#slider img {
 	margin:0;
 }
@@ -88,6 +91,9 @@
 	background:#39414A;
 	float:right;
 	display: none;
+}
+.esco-accueil .clg37 div#navigation {
+	float:left;
 }
 .esco-accueil div#navigation li{
 	margin:0;
@@ -125,7 +131,7 @@
 }
 
 .esco-accueil div#content_netocentre li{
-    list-style:disc outside url("../img/Puce.png");
+	list-style:disc outside url("../img/Puce.png");
 }
 
 

@@ -51,7 +51,7 @@
 			<div class="portlet-section-body">
 
 				<div id="content">
-					<div id="slider" class="esco-accueil">
+					<div id="slider" class="esco-accueil clg37">
 						<ul>
 							<li><img src="/esco-accueil/img/touraine-eschool.jpg" alt="Touraine e-school"></li>
 							<li><img src="/esco-accueil/img/cg37.jpg"
@@ -61,7 +61,7 @@
 								- Liberté - Égalité - Fraternité - République française"></li>
 						</ul>
 					</div>
-					<div id="navigation" class="esco-accueil">
+					<div id="navigation" class="esco-accueil clg37">
 						<ul>
 							<li><img src="/esco-accueil/img/thumb_touraine-eschool.jpg" alt="Touraine e-school" />
 								<div class="esco-accueil meta">
