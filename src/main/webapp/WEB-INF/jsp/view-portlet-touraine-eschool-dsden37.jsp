@@ -44,7 +44,7 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text">
+				<div id="content_netocentre" class="text clg37">
 
 					<img src="/esco-accueil/img/dsden37.jpg" alt="Académie Orléans-Tours - Direction des Services Départementaux de l'Éducation Nationale Indre-et-Loire
 								- Liberté - Égalité - Fraternité - République française">

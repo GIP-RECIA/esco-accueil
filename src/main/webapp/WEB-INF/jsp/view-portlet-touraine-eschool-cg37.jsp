@@ -44,7 +44,7 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text">
+				<div id="content_netocentre" class="text clg37">
 
 					<img src="/esco-accueil/img/cg37.jpg" alt="Collège : le Conseil général d'Indre-et-Loire crée les conditions de la réussite">
 					<H3>

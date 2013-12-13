@@ -44,7 +44,7 @@
 
 			<div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text">
+				<div id="content_netocentre" class="text clg37">
 
 					<img src="/esco-accueil/img/touraine-eschool.jpg" alt="Touraine e-school">
 					<H3>
