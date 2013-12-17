@@ -57,7 +57,7 @@
 					<br>
 					<p>Ce véritable bureau virtuel est accessible depuis n’importe quel
 					ordinateur connecté à l’Internet grâce à un seul mot de passe.Depuis son espace personnel, l’utilisateur bénéficie des services
-					et ressources en rapport avec son activité. </p>
+					et ressources en lien avec son activité. </p>
 					<br>
 					<P>Ainsi, l’élève présent
 					au collège ou à son domicile peut consulter son emploi du temps,

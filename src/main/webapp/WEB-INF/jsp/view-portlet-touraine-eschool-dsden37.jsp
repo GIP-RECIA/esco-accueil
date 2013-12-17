@@ -49,7 +49,7 @@
 					<img src="/esco-accueil/img/dsden37.jpg" alt="Académie Orléans-Tours - Direction des Services Départementaux de l'Éducation Nationale Indre-et-Loire
 								- Liberté - Égalité - Fraternité - République française">
 					<H3>
-						<FONT COLOR="#3F6AA5"><B>Le partenariat actif avec le conseil
+						<FONT COLOR="#3F6AA5"><B>Le partenariat actif avec le Conseil
 								général d’Indre-et-Loire permet aux collèges de s’inscrire
 								encore plus dans l’ère du numérique : c’est un impératif
 								pédagogique et un projet de société ambitieux.</B></FONT>

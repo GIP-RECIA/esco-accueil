@@ -51,7 +51,7 @@
 						<FONT COLOR="#3F6AA5"><B>Collège : le Conseil général d’Indre-et-Loire crée les conditions de la réussite</B></FONT>
 					</H3>
 					<br>
-					<p>Les 22 000 élèves scolarisés dans les 55 collèges du département peuvent compter sur le Conseil général.</p>
+					<p>Les 23 524 élèves scolarisés dans les 55 collèges publics du département peuvent compter sur le Conseil général.</p>
 					<br>
 					<P>La collectivité met tout en œuvre pour que chacun des collégiens
 						bénéficie des conditions d’étude optimales. C’est l’assurance de
