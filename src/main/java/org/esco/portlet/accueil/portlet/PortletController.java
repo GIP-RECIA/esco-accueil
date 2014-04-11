@@ -20,10 +20,8 @@ import javax.portlet.PortletPreferences;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 
-
 import org.apache.log4j.Logger;
 import org.esco.portlet.accueil.services.UserAgentInspector;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -54,64 +52,41 @@ public class PortletController {
 	private static final String MOBILE_VIEW = "mobile";
 	private static final String WAI_VIEW = "wai";
 
-    @RequestMapping("VIEW")
-    public ModelAndView renderView(RenderRequest request, RenderResponse response) throws Exception {
-    	//this.init(request, response);
-        final PortletPreferences prefs = request.getPreferences();
-    	String defaultPortletView = prefs.getValue(PREF_CONTEXT_VIEW,LYCEES_VIEW);
+	@RequestMapping("VIEW")
+	public ModelAndView renderView(RenderRequest request, RenderResponse response) throws Exception {
+		final PortletPreferences prefs = request.getPreferences();
+		String defaultPortletView = prefs.getValue(PREF_CONTEXT_VIEW,LYCEES_VIEW);
 
-    	if (log.isDebugEnabled()){
-    		log.debug("Context selected from portlet preference : " + defaultPortletView);
-    	}
+		if (log.isDebugEnabled()){
+			log.debug("Context selected from portlet preference : " + defaultPortletView);
+		}
 
-    	if (!userAgentInspector.isAuthorized(request)) {
-    		return this.browserError(request, response);
-    	}
-	    /*if(userAgentInspector.isMobile(request)) {
-			return this.browseMobile(request, response, defaultPath);
-	    } else {
-	    	if(MOBILE_VIEW.equals(defaultPortletView))
-	    		return this.browseMobile(request, response, defaultPath);
-	    	else if(WAI_VIEW.equals(defaultPortletView))
-	    		return this.browseWai(request, response, defaultPath, null);
-	    	else*/
-	    return this.browseStandard(request, response, defaultPortletView);
-	    //}
-    }
+		if (!userAgentInspector.isSecure(request)) {
+			return new ModelAndView("browser-not-secure", new ModelMap());
+		}
+		if (!userAgentInspector.isAuthorized(request)) {
+			return new ModelAndView("browser-incompatible", new ModelMap());
+		}
+		return this.browseStandard(request, response, defaultPortletView);
+	}
 
 	@RequestMapping(value = {"VIEW"}, params = {"action=browseStandard"})
-    public ModelAndView browseStandard(RenderRequest request, RenderResponse response, final String view) {
-    	return new ModelAndView("view-portlet-"+view, new ModelMap());
-    }
+	public ModelAndView browseStandard(RenderRequest request, RenderResponse response, final String view) {
+		return new ModelAndView("view-portlet-"+view, new ModelMap());
+	}
 
 	@RequestMapping(value = {"VIEW"}, params = {"action=browserError"})
-    public ModelAndView browserError(RenderRequest request, RenderResponse response) {
-    	return new ModelAndView("browser-error", new ModelMap());
-    }
+	public ModelAndView browserError(RenderRequest request, RenderResponse response) {
+		return new ModelAndView("error", new ModelMap());
+	}
 
-	/*@RequestMapping(value = {"VIEW"}, params = {"action=browseMobile"})
-    public ModelAndView browseMobile(RenderRequest request, RenderResponse response,
-    								@RequestParam String dir) {
-
-        return new ModelAndView("view-portlet-mobile", model);
-    }
-
-	@RequestMapping(value = {"VIEW"}, params = {"action=browseWai"})
-    public ModelAndView browseWai(RenderRequest request, RenderResponse response,
-    								@RequestParam(required=false) String dir,
-    								@RequestParam(required=false) String msg) {
-
-        return new ModelAndView("view-portlet-wai", model);
-    }*/
-
-
-    @RequestMapping("ABOUT")
+	@RequestMapping("ABOUT")
 	public ModelAndView renderAboutView(RenderRequest request, RenderResponse response) throws Exception {
 		ModelMap model = new ModelMap();
 		return new ModelAndView("about-portlet", model);
 	}
 
-    @RequestMapping("HELP")
+	@RequestMapping("HELP")
 	public ModelAndView renderHelpView(RenderRequest request, RenderResponse response) throws Exception {
 		ModelMap model = new ModelMap();
 		return new ModelAndView("help-portlet", model);

@@ -25,8 +25,8 @@
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"/>-->
 
 	<!--
-	 | Message source for this context, loaded from localized "messages_xx" files
-	 +-->
+	| Message source for this context, loaded from localized "messages_xx" files
+	+-->
 	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basenames">
 			<list>
@@ -36,8 +36,8 @@
 	</bean>
 
 	<!--
-	 | Standard JSP view resolver
-	 +-->
+	| Standard JSP view resolver
+	+-->
 	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="cache" value="true"/>
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
@@ -54,7 +54,6 @@
 		<property name="userAgentAutorized">
 			<list>
 				<value>.*Firefox/([4-9]|([0-9]{2,})).*</value>
-				<value>.*msie 8.0.*</value>
 				<value>.*msie 9.0.*</value>
 				<value>.*msie 10.0.*</value>
 				<value>.*Trident/7.0; rv:11.0.*</value>
@@ -67,6 +66,11 @@
 				<value>.*Android.*</value>
 				<value>.*Safari.*Pre.*</value>
 				<value>.*Nokia.*AppleWebKit.*</value>
+			</list>
+		</property>
+		<property name="userAgentNotSecure">
+			<list>
+				<value>.*msie [1-8].0.*</value>
 			</list>
 		</property>
 		<!-- <property name="userAgentMobile">

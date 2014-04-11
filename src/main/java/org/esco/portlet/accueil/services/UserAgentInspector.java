@@ -23,8 +23,6 @@ import java.util.regex.Pattern;
 import javax.portlet.PortletRequest;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.Priority;
-import org.esco.portlet.accueil.portlet.PortletController;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
@@ -37,52 +35,89 @@ public class UserAgentInspector implements InitializingBean {
 	private final static Logger LOGGER = Logger.getLogger(UserAgentInspector.class);
 
 	/** Liste des regex validant les user-agent autorisés. */
-    private List<String> userAgentAutorized;
+	private List<String> userAgentAutorized;
 
-    /** liste des pattern compilé à partir des regex. */
-    private final List<Pattern> patterns = new ArrayList<Pattern>();
+	/** Liste des regex validant les user-agent non sécure. */
+	private List<String> userAgentNotSecure;
 
-    /**
+	/** liste des pattern compilé à partir des regex pour les UAA. */
+	private final List<Pattern> patternsUAA = new ArrayList<Pattern>();
+	/** liste des pattern compilé à partir des regex pour les UAS. */
+	private final List<Pattern> patternsUAS = new ArrayList<Pattern>();
+
+	/**
 	 * Contructor of the object UserAgentInspector.java.
 	 */
 	private UserAgentInspector() {
 		super();
 	}
 
-    /**
-     * Vérifie la comaptibilité du user-agent avec la liste des agent connus valide.
-     * @param req PortletRequest pour obtenir le user-agent.
-     * @return <code>boolean</code> Vrai si le user-egent match avec l'une des valeurs listée.
-     */
-    public boolean isAuthorized(final PortletRequest req) {
+	/**
+	 * Vérifie la comaptibilité du user-agent avec la liste des agent connus valide.
+	 * @param req PortletRequest pour obtenir le user-agent.
+	 * @return <code>boolean</code> Vrai si le user-egent match avec l'une des valeurs listée.
+	 */
+	public boolean isAuthorized(final PortletRequest req) {
 
-    	boolean isAuthorized = false;
+		boolean isAuthorized = false;
 
-        // Assertions.
-        if (req == null) {
-            String msg = "Argument 'req' cannot be null";
-            throw new IllegalArgumentException(msg);
-        }
+		// Assertions.
+		if (req == null) {
+			String msg = "Argument 'req' cannot be null";
+			throw new IllegalArgumentException(msg);
+		}
 
-        final String userAgent = req.getProperty("user-agent").toLowerCase();
-        if (LOGGER.isDebugEnabled()){
-        	LOGGER.debug("Access from user-agent : " + userAgent);
-        }
-        if (userAgent != null && patterns.size() != 0) {
-            for (Pattern pattern : patterns) {
-                if (pattern.matcher(userAgent).matches()) {
-                	isAuthorized = true;
-                    break;
-                }
-            }
-        }
-        if (!isAuthorized && LOGGER.isInfoEnabled()){
-        	LOGGER.info("User-Agent is not in the list of managed user-agent : " + userAgent);
-        }
+		final String userAgent = req.getProperty("user-agent").toLowerCase();
+		if (LOGGER.isDebugEnabled()){
+			LOGGER.debug("Access from user-agent : " + userAgent);
+		}
+		if (userAgent != null && patternsUAA.size() != 0) {
+			for (Pattern pattern : patternsUAA) {
+				if (pattern.matcher(userAgent).matches()) {
+					isAuthorized = true;
+					break;
+				}
+			}
+		}
+		if (!isAuthorized && LOGGER.isInfoEnabled()){
+			LOGGER.info("User-Agent is not in the list of managed user-agent : " + userAgent);
+		}
 
-        return isAuthorized;
+		return isAuthorized;
 
-    }
+	}
+
+	/**
+	 * Vérifie la que le user-agent est sécurisé avec la liste des agent connus non valide.
+	 * @param req PortletRequest pour obtenir le user-agent.
+	 * @return <code>boolean</code> Faux si le user-egent match avec l'une des valeurs listée.
+	 */
+	public boolean isSecure(final PortletRequest req) {
+		boolean isSecure = true;
+
+		// Assertions.
+		if (req == null) {
+			String msg = "Argument 'req' cannot be null";
+			throw new IllegalArgumentException(msg);
+		}
+		final String userAgent = req.getProperty("user-agent").toLowerCase();
+		if (LOGGER.isDebugEnabled()){
+			LOGGER.debug("Access from user-agent : " + userAgent);
+		}
+		if (userAgent != null && patternsUAS.size() != 0) {
+			for (Pattern pattern : patternsUAS) {
+				if (pattern.matcher(userAgent).matches()) {
+					isSecure = false;
+					break;
+				}
+			}
+		}
+		if (!isSecure && LOGGER.isInfoEnabled()){
+			LOGGER.info("User-Agent is in the list of unsecure user-agent : " + userAgent);
+		}
+
+		return isSecure;
+	}
 
 
 	/**
@@ -93,15 +128,26 @@ public class UserAgentInspector implements InitializingBean {
 		this.userAgentAutorized = userAgentAutorized;
 	}
 
+	/**
+	 * Setter of attribute userAgentNotSecure.
+	 * @param userAgentNotSecure the attribute userAgentNotSecure to set
+	 */
+	public void setUserAgentNotSecure(List<String> userAgentNotSecure) {
+		this.userAgentNotSecure = userAgentNotSecure;
+	}
 
 	/**
 	 * @see org.springframework.beans.factory.InitializingBean#afterPropertiesSet()
 	 */
 	public void afterPropertiesSet() {
 		Assert.notEmpty(userAgentAutorized, "Il est nécessaire de spécifier une liste de navigateurs compatibles !");
-        // Compile our patterns
-        for (String userAgent : userAgentAutorized) {
-            patterns.add(Pattern.compile(userAgent.toLowerCase()));
-        }
-    }
+		Assert.notEmpty(userAgentNotSecure, "Il est nécessaire de spécifier une liste de navigateurs non sécure !");
+		// Compile our patterns
+		for (String userAgent : userAgentAutorized) {
+			patternsUAA.add(Pattern.compile(userAgent.toLowerCase()));
+		}
+		for (String userAgent : userAgentNotSecure) {
+			patternsUAS.add(Pattern.compile(userAgent.toLowerCase()));
+		}
+	}
 }
