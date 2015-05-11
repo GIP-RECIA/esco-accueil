@@ -24,7 +24,7 @@
 <portlet:defineObjects />
 
 <c:set var="n">
-	<portlet:namespace />
+    <portlet:namespace />
 </c:set>
 
 <!-- Framework CSS  GIP Recia  For a bug in Chrome, important to load css
@@ -33,60 +33,60 @@
     -->
 
 <link rel="stylesheet" href="/esco-accueil/css/esco-accueil.css"
-	type="text/css" media="screen, projection">
+    type="text/css" media="screen, projection">
 
 <script type="text/javascript"
-	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
+    src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
-	var jQuery = $.noConflict(true);
+    var jQuery = $.noConflict(true);
 </script>
 
 <div class="esco-accueil">
 
-	<div class="container">
+    <div class="container">
 
-		<div class="portlet-section">
+        <div class="portlet-section">
 
-			<div class="portlet-section-body">
+            <div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text" style="height: 300px">
+                <div id="content_netocentre" class="text" style="height: 300px">
 
-					<div id="text_CLG37" style="padding: 0px 50px 0px 15px; float: left; width: 40%; height: 282px; font-family: Arial,Helvetica,sans-serif; font-size: 11pt;display:none;">
-						<br>
-						<br>
-						<strong>Bienvenue sur l'espace de travail Touraine-eschool.fr</strong>
-						<br>
-						<br>
-						<br>
-						Mis en place par le Conseil général d'Indre-et-Loire, l'espace de travail touraine-eschool.fr est destiné aussi bien aux élèves, parents et professeurs. Il permet de consulter emploi du temps, cours en ligne, dates de devoirs et corrigés, cahier de texte, notes et absences.
-						<br>
-						<br>
-						Le Conseil général d'Indre-et-Loire met tout en oeuvre pour favoriser la réussite des collégiens et leur donner les moyens de tirer pleinement parti du numérique dans leurs apprentissages.
-						<br>
-						<br>
-					</div>
-					<div id="img_CLG37" style="float: left; margin-left: 1px; width: 40%;display:none;">
-						<img src="/esco-accueil/img/clg37-visuel-ENT.jpg" alt="L'ENT Touraine-eschool.fr" style="width: 500px;">
-					</div>
-					<div id="nojs" class="erreur">
-						<span>
-							<spring:message code="error.javascriptengine" />
-						</span>
-					</div>
-					<div id="nocookies" class="erreur">
-						<span>
-							<spring:message code="error.cookiesengine" />
-						</span>
-					</div>
-				</div>
+                    <div id="text_CLG37" style="padding: 0px 50px 0px 15px; float: left; width: 40%; height: 282px; font-family: Arial,Helvetica,sans-serif; font-size: 11pt;display:none;">
+                        <br>
+                        <br>
+                        <strong>Bienvenue sur l'espace de travail Touraine-eschool.fr</strong>
+                        <br>
+                        <br>
+                        <br>
+                        Mis en place par le Conseil départemental d'Indre-et-Loire, l'espace de travail touraine-eschool.fr est destiné aussi bien aux élèves, parents et professeurs. Il permet de consulter emploi du temps, cours en ligne, dates de devoirs et corrigés, cahier de texte, notes et absences.
+                        <br>
+                        <br>
+                        Le Conseil départemental d'Indre-et-Loire met tout en oeuvre pour favoriser la réussite des collégiens et leur donner les moyens de tirer pleinement parti du numérique dans leurs apprentissages.
+                        <br>
+                        <br>
+                    </div>
+                    <div id="img_CLG37" style="float: left; margin-left: 1px; width: 40%;display:none;">
+                        <img src="/esco-accueil/img/clg37-visuel-ENT.jpg" alt="L'ENT Touraine-eschool.fr" style="width: 500px;">
+                    </div>
+                    <div id="nojs" class="erreur">
+                        <span>
+                            <spring:message code="error.javascriptengine" />
+                        </span>
+                    </div>
+                    <div id="nocookies" class="erreur">
+                        <span>
+                            <spring:message code="error.cookiesengine" />
+                        </span>
+                    </div>
+                </div>
 
-			</div>
+            </div>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 
-	<script type="text/javascript"
-		src="/esco-accueil/js/esco-accueil.js"></script>
+    <script type="text/javascript"
+        src="/esco-accueil/js/esco-accueil.js"></script>
 
 </div>
