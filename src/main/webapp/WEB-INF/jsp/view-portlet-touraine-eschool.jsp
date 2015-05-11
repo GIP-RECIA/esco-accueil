@@ -77,7 +77,7 @@
                                     <h3>Conseil départemental d'Indre-et-Loire</h3>
                                     <p>Le Conseil départemental d'Indre-et-Loire crée les conditions de la réussite ...</p>
                                     <a class="readmore"
-                                        href="/portail/f/cg37">En
+                                        href="/portail/f/cd37">En
                                         savoir plus </a>
                                 </div></li>
                             <li><img src="/esco-accueil/img/thumb_dsden37.jpg"
