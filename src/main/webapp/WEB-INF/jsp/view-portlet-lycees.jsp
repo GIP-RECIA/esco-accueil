@@ -55,11 +55,11 @@
 						<ul>
 							<li><img src="/esco-accueil/img/netocentre.jpg"	alt="NetO'Centre"></li>
 							<li><img src="/esco-accueil/img/region.jpg"
-								alt="Avec la Région Centre y'a vraiment de quoi sourire !
+								alt="Avec la Région Centre-Val de Loire y'a vraiment de quoi sourire !
 							- toutes les informations sur www.jeunesocentre.fr
 							- Lycéens, Apprentis, Étudiants :  Livres et ordinateurs gratuits, Aides aux transports et équipements professionnels,
 							Voyages à l'étranger, Sorties à prix réduits
-							- Région Centre : Plus qu'une Région une chance pour l'éducation - www.regioncentre.fr"></li>
+							- Région Centre-Val de Loire : Plus qu'une Région une chance pour l'éducation - www.regioncentre-valdeloire.fr"></li>
 							<li><img src="/esco-accueil/img/academie.jpg"
 								alt="Académie Orléans-Tours - Liberté - Égalité - Fraternité - République française"></li>
 							<li><img src="/esco-accueil/img/agricole.jpg"
@@ -79,11 +79,11 @@
 										savoir plus </a>
 								</div></li>
 							<li><img src="/esco-accueil/img/thumb_region.jpg"
-								alt="Avec la Région Centre y'a vraiment de quoi sourire !
+								alt="Avec la Région Centre-Val de Loire y'a vraiment de quoi sourire !
 							- toutes les informations sur www.jeunesocentre.fr
 							- Lycéens, Apprentis, Étudiants :  Livres et ordinateurs gratuits, Aides aux transports et équipements professionnels,
 							Voyages à l'étranger, Sorties à prix réduits
-							- Région Centre : Plus qu'une Région une chance pour l'éducation - www.regioncentre.fr" />
+							- Région Centre-Val de Loire : Plus qu'une Région une chance pour l'éducation - www.regioncentre-valdeloire.fr" />
 								<div class="esco-accueil meta">
 									<h3>Région Centre</h3>
 									<p>La Région a la responsabilité des conditions matérielles offertes ...</p>

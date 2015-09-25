@@ -47,13 +47,13 @@
 				<div id="content_netocentre" class="text">
 
 					<img src="/esco-accueil/img/region.jpg"
-						alt="Avec la Région Centre y'a vraiment de quoi sourire !
+						alt="Avec la Région Centre-Val de Loire y'a vraiment de quoi sourire !
 							- toutes les informations sur www.jeunesocentre.fr
 							- Lycéens, Apprentis, Étudiants :  Livres et ordinateurs gratuits, Aides aux transports et équipements professionnels,
 							Voyages à l'étranger, Sorties à prix réduits
-							- Région Centre : Plus qu'une Région une chance pour l'éducation - www.regioncentre.fr">
+							- Région Centre-Val de Loire : Plus qu'une Région une chance pour l'éducation - www.regioncentre-valdeloire.fr">
 					<H3>
-						<FONT COLOR="#3F6AA5"><B>La Région Centre</B></FONT>
+						<FONT COLOR="#3F6AA5"><B>La Région Centre-Val de Loire</B></FONT>
 				    </H3>
 					<br>
 					<p>La Région a la responsabilité des conditions matérielles
@@ -65,15 +65,15 @@
 						d'accompagnement des projets éducatifs mis en place par les
 						établissements.</p>
 					<br>
-					<p>Dès 2002, la Région Centre a câblé l'ensemble des lycées
+					<p>Dès 2002, la Région Centre-Val de Loire a câblé l'ensemble des lycées
 						suivant un schéma directeur approuvé par le Rectorat de l'académie
-						d'Orléans-Tours et la Région Centre. À l'heure actuelle l'ensemble
+						d'Orléans-Tours et la Région Centre-Val de Loire. À l'heure actuelle l'ensemble
 						de ces équipements est supervisé par une plate forme de
 						télégestion. L'accès au réseau internet se fait par
 						l'intermédiaire d'un réseau très haut débit financé par le Conseil
 						régional.</p>
 					<br>
-					<p>Dès lors, la Région Centre a lancé en collaboration avec le
+					<p>Dès lors, la Région Centre-Val de Loire a lancé en collaboration avec le
 						Rectorat et la DRAAF (Direction Régionale de l'Alimentation de
 						l'Agriculture et de la Forêt) un certain nombre d'actions et de
 						dispositifs cohérents visant à développer les usages TICE et
@@ -83,7 +83,7 @@
 						- service en ligne d'accompagnement scolaire dans plusieurs établissements volontaires,
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
-						- Espaces Numériques de Travail Net O'Centre dans les lycées publics et les Centres de Formation d'Apprentis de la région Centre,
+						- Espaces Numériques de Travail Net O'Centre dans les lycées publics et les Centres de Formation d'Apprentis de la région Centre-Val de Loire,
 					</p>
 					<p style="margin-bottom: 0.3em !important;">
 						- manuels scolaires numériques,
@@ -94,9 +94,9 @@
 					<br>
 					<p>
 						Pour plus d'informations sur les dispositifs proposés par la
-						Région Centre aux lycées, apprentis et étudiants, ne manquez pas
+						Région Centre-Val de Loire aux lycées, apprentis et étudiants, ne manquez pas
 						de visiter <a target="_blank" href="http://www.jeunesOCentre.fr">www.jeunesOCentre.fr</a>
-						ou <a target="_blank" href="http://www.regioncentre.fr">www.regioncentre.fr</a>
+						ou <a target="_blank" href="http://www.regioncentre-valdeloire.fr">www.regioncentre-valdeloire.fr</a>
 					</p>
 
 				</div>

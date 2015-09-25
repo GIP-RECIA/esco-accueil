@@ -24,89 +24,89 @@
 <portlet:defineObjects />
 
 <c:set var="n">
-	<portlet:namespace />
+    <portlet:namespace />
 </c:set>
 
 <link rel="stylesheet" href="/esco-accueil/css/esco-accueil.css"
-	type="text/css" media="screen, projection">
+    type="text/css" media="screen, projection">
 
 <script type="text/javascript"
-	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
+    src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
-	var jQuery = $.noConflict(true);
+    var jQuery = $.noConflict(true);
 </script>
 
 <div class="esco-accueil">
 
-	<div class="container">
+    <div class="container">
 
-		<div class="portlet-section">
+        <div class="portlet-section">
 
-			<div class="portlet-section-body">
+            <div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text">
+                <div id="content_netocentre" class="text">
 
-						<img src="/esco-accueil/img/region.jpg" alt="Région Centre">
+                        <img src="/esco-accueil/img/region.jpg" alt="Région Centre-Val de Loire">
                     <H3>
-                        <FONT COLOR="#3F6AA5"><B>La Région Centre</B></FONT>
+                        <FONT COLOR="#3F6AA5"><B>La Région Centre-Val de Loire</B></FONT>
                     </H3>
                     <br>
-                    	<p>
-	                    	Depuis la loi de décentralisation de 1983, il appartient à la Région de créer les CFA et les sections d’apprentissage,
-	                    	d’ouvrir les formations par apprentissage appropriées au sein de ces structures et d’accompagner financièrement le
-	                    	développement de l’apprentissage. L’État (Rectorat, DRAAF, DRJSCS, DIRRECTE) pour sa part conserve la
-	                    	compétence du contrôle pédagogique, de l’organisation des examens et de la vérification des contrats de travail.
-                    	</p>
+                        <p>
+                            Depuis la loi de décentralisation de 1983, il appartient à la Région de créer les CFA et les sections d’apprentissage,
+                            d’ouvrir les formations par apprentissage appropriées au sein de ces structures et d’accompagner financièrement le
+                            développement de l’apprentissage. L’État (Rectorat, DRAAF, DRJSCS, DIRRECTE) pour sa part conserve la
+                            compétence du contrôle pédagogique, de l’organisation des examens et de la vérification des contrats de travail.
+                        </p>
                     <br>
-                    	<p>
-                    		Depuis le 1er janvier 2003, la Région assure également le versement aux employeurs d’apprentis de l’Indemnité
-                    		Compensatrice Forfaitaire pour soutenir et accompagner l’effort de formation des entreprises. Actuellement,
-                    		ce sont 31 millions d’euros qui vont être versés à 12 000 entreprises de la région Centre.
-                    	</p>
+                        <p>
+                            Depuis le 1er janvier 2003, la Région assure également le versement aux employeurs d’apprentis de l’Indemnité
+                            Compensatrice Forfaitaire pour soutenir et accompagner l’effort de formation des entreprises. Actuellement,
+                            ce sont 31 millions d’euros qui vont être versés à 12 000 entreprises de la région Centre-Val de Loire.
+                        </p>
                     <br>
-                    	<p>
-                    		La Région Centre développe une politique dynamique en matière d’égalité des chances. À ce titre,
-                    		des mesures ont été mises en œuvre pour favoriser l’accès aux savoirs et à la connaissance pour tous.
-                    	</p>
+                        <p>
+                            La Région Centre-Val de Loire développe une politique dynamique en matière d’égalité des chances. À ce titre,
+                            des mesures ont été mises en œuvre pour favoriser l’accès aux savoirs et à la connaissance pour tous.
+                        </p>
                     <br>
-                    	<p>
-                    		Depuis 2008, en collaboration avec le GIP RECIA, la Région Centre a financé le raccordement des CFA
-                    		au réseau haut débit régional et le déploiement de réseaux internes afin de permettre le développement
-                    		des usages pédagogiques des outils numériques.
-                    	</p>
+                        <p>
+                            Depuis 2008, en collaboration avec le GIP RECIA, la Région Centre-Val de Loire a financé le raccordement des CFA
+                            au réseau haut débit régional et le déploiement de réseaux internes afin de permettre le développement
+                            des usages pédagogiques des outils numériques.
+                        </p>
                     <br>
-                    	<p>
-                    		À la suite de ces travaux, la Région Centre a lancé le projet d’un Environnement Numérique de Travail
-                    		spécifique aux CFA, à partir de l’ENT Net O’Centre déployé dans les lycées.
-                    	</p>
+                        <p>
+                            À la suite de ces travaux, la Région Centre-Val de Loire a lancé le projet d’un Environnement Numérique de Travail
+                            spécifique aux CFA, à partir de l’ENT Net O’Centre déployé dans les lycées.
+                        </p>
                     <br>
-                    	<p>
-                    		En 2011, trois CFA pilotes ont testé les différents services de l’ENT, Net O’Centre, afin de l’adapter
-                    		aux spécificités de la formation par apprentissage.
-                    	</p>
+                        <p>
+                            En 2011, trois CFA pilotes ont testé les différents services de l’ENT, Net O’Centre, afin de l’adapter
+                            aux spécificités de la formation par apprentissage.
+                        </p>
                     <br>
-                    	<p>
-                    		En septembre 2012, un groupe de 6 CFA supplémentaires a été doté de l’ENT Net’O Centre.
-                    	</p>
+                        <p>
+                            En septembre 2012, un groupe de 6 CFA supplémentaires a été doté de l’ENT Net’O Centre.
+                        </p>
                     <br>
-                    	<p>
-                    		En septembre 2013, ce seront 11 CFA supplémentaires qui en seront équipés.
-                    	</p>
+                        <p>
+                            Aujourd'hui, la grande majorité des CFA en sont équipés.
+                        </p>
                     <br>
-						<p>
-							Pour plus d'informations sur les dispositifs proposés par la
-							Région Centre aux lycéens, apprentis et étudiants, ne manquez pas
-							de visiter <a target="_blank" href="http://www.jeunesOCentre.fr">www.jeunesOCentre.fr</a>
-							ou <a target="_blank" href="http://www.regioncentre.fr">www.regioncentre.fr</a>
-						</p>
+                        <p>
+                            Pour plus d'informations sur les dispositifs proposés par la
+                            Région Centre-Val de Loire aux lycéens, apprentis et étudiants, ne manquez pas
+                            de visiter <a target="_blank" href="http://www.jeunesOCentre.fr">www.jeunesOCentre.fr</a>
+                            ou <a target="_blank" href="http://www.regioncentre-valdeloire.fr">www.regioncentre-valdeloire.fr</a>
+                        </p>
 
-				</div>
+                </div>
 
-			</div>
+            </div>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 
 </div>
 

@@ -24,91 +24,91 @@
 <portlet:defineObjects />
 
 <c:set var="n">
-	<portlet:namespace />
+    <portlet:namespace />
 </c:set>
 
 <link rel="stylesheet" href="/esco-accueil/css/esco-accueil.css"
-	type="text/css" media="screen, projection">
+    type="text/css" media="screen, projection">
 
 <script type="text/javascript"
-	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
+    src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
     var jQuery = $.noConflict(true);
 </script>
 
 <div class="esco-accueil">
 
-	<div class="container">
+    <div class="container">
 
-		<div class="portlet-section">
+        <div class="portlet-section">
 
-			<div class="portlet-section-body">
+            <div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text">
+                <div id="content_netocentre" class="text">
 
-					<img src="/esco-accueil/img/netocentre.jpg" alt="Net O'Centre">
-					<H3>
-						<FONT COLOR="#3F6AA5"><B>Net O'Centre, qu'est-ce que
-								c'est&nbsp;?</B></FONT>
-					</H3>
-					<br>
-					<P>Le principe d'un Espace Numérique de Travail est de proposer
-						à travers un site web sécurisé un point d'accès unique où
-						l'enseignant, l'élève et l'ensemble des personnels de
-						l'établissement, peuvent trouver les informations, outils et
-						services numériques en rapport avec leurs activités éducatives.</P>
-						<BR>
-					<P>Une connexion internet, un clic et vous accédez ainsi en
-						temps réel avec Net O'Centre à votre bureau virtuel, votre
-						cartable électronique (cahier de texte, cours en ligne,
-						messagerie, notes et absences, ressources numériques …)</P>
-						<BR>
-					<P>Les parents d'élève disposent également d'un compte dans
-						l'ENT leur permettant notamment de pouvoir consulter des
-						informations concernant la scolarité de leur enfant (gestion des
-						notes, des absences …).</P>
-						<BR>
-					<P>À partir de la collaboration entre le Rectorat
-						Orléans-Tours, la DRAAF (Direction Régionale de l'Alimentation de
-						l'Agriculture et de la Forêt), le GIP RECIA (Région Centre
-						Interactive) et la Région Centre, Net O'Centre est accessible
-						depuis la rentrée scolaire 2012 dans l'ensemble des lycées publics
-						de la région.</P>
-						<BR>
-					<P>Rentrez dans une nouvelle dimension avec Net O'Centre.</P>
-					<BR> <BR>
-					<H3>
-						<FONT COLOR="#3F6AA5"><B>Quels sont les services et
-								applications disponibles&nbsp;? </B></FONT>
-					</H3>
-					<BR>
-					<P>Avec Net O'Centre vous pouvez, en fonction des choix et des
-						abonnements souscrits par l'établissement et de votre profil,
-						accéder sans ré identification à plus d'une 20ene de services,
-						d'informations et d'applications dans les domaines suivants :</P>
-					<BR>
-					<UL>
-						<LI><P>pédagogie&nbsp;: cours en ligne, espace de
-								stockage personnalisé, aide aux devoirs,</P>
-						<LI><P>communication&nbsp;: messagerie, annonces,</P>
-						<LI><P>vie de l'établissement&nbsp;: gestion et
-								réservation des ressources et équipements,</P>
-						<LI><P>orientation&nbsp;: web classeur, Etoile, ONISEP,</P>
-						<LI><P>vie scolaire&nbsp;: cahier de texte, services de
-								gestion des notes et des absences,</P>
-						<LI><P>ressources numériques&nbsp;: manuels scolaires
-								numériques, abonnements à des ressources spécifiques&nbsp;: le
-								site.Tv, les encyclopédies,...</P>
-					</UL>
-				</div>
+                    <img src="/esco-accueil/img/netocentre.jpg" alt="Net O'Centre">
+                    <H3>
+                        <FONT COLOR="#3F6AA5"><B>Net O'Centre, qu'est-ce que
+                                c'est&nbsp;?</B></FONT>
+                    </H3>
+                    <br>
+                    <P>Le principe d'un Espace Numérique de Travail est de proposer
+                        à travers un site web sécurisé un point d'accès unique où
+                        l'enseignant, l'élève et l'ensemble des personnels de
+                        l'établissement, peuvent trouver les informations, outils et
+                        services numériques en rapport avec leurs activités éducatives.</P>
+                        <BR>
+                    <P>Une connexion internet, un clic et vous accédez ainsi en
+                        temps réel avec Net O'Centre à votre bureau virtuel, votre
+                        cartable électronique (cahier de texte, cours en ligne,
+                        messagerie, notes et absences, ressources numériques …)</P>
+                        <BR>
+                    <P>Les parents d'élève disposent également d'un compte dans
+                        l'ENT leur permettant notamment de pouvoir consulter des
+                        informations concernant la scolarité de leur enfant (gestion des
+                        notes, des absences …).</P>
+                        <BR>
+                    <P>À partir de la collaboration entre le Rectorat
+                        Orléans-Tours, la DRAAF (Direction Régionale de l'Alimentation de
+                        l'Agriculture et de la Forêt), le GIP RECIA (Région Centre
+                        Interactive) et la Région Centre-Val de Loire, Net O'Centre est accessible
+                        depuis la rentrée scolaire 2012 dans l'ensemble des lycées publics
+                        de la région.</P>
+                        <BR>
+                    <P>Rentrez dans une nouvelle dimension avec Net O'Centre.</P>
+                    <BR> <BR>
+                    <H3>
+                        <FONT COLOR="#3F6AA5"><B>Quels sont les services et
+                                applications disponibles&nbsp;? </B></FONT>
+                    </H3>
+                    <BR>
+                    <P>Avec Net O'Centre vous pouvez, en fonction des choix et des
+                        abonnements souscrits par l'établissement et de votre profil,
+                        accéder sans ré identification à plus d'une 20ene de services,
+                        d'informations et d'applications dans les domaines suivants :</P>
+                    <BR>
+                    <UL>
+                        <LI><P>pédagogie&nbsp;: cours en ligne, espace de
+                                stockage personnalisé, aide aux devoirs,</P>
+                        <LI><P>communication&nbsp;: messagerie, annonces,</P>
+                        <LI><P>vie de l'établissement&nbsp;: gestion et
+                                réservation des ressources et équipements,</P>
+                        <LI><P>orientation&nbsp;: web classeur, Etoile, ONISEP,</P>
+                        <LI><P>vie scolaire&nbsp;: cahier de texte, services de
+                                gestion des notes et des absences,</P>
+                        <LI><P>ressources numériques&nbsp;: manuels scolaires
+                                numériques, abonnements à des ressources spécifiques&nbsp;: le
+                                site.Tv, les encyclopédies,...</P>
+                    </UL>
+                </div>
 
-			</div>
+            </div>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 
 </div>
 
 <script type="text/javascript"
-	src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>
+    src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>

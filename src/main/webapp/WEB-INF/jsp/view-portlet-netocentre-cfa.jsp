@@ -24,7 +24,7 @@
 <portlet:defineObjects />
 
 <c:set var="n">
-	<portlet:namespace />
+    <portlet:namespace />
 </c:set>
 
 <!-- Framework CSS  GIP Recia  For a bug in Chrome, important to load css
@@ -33,75 +33,75 @@
     -->
 
 <link rel="stylesheet" href="/esco-accueil/css/esco-accueil.css"
-	type="text/css" media="screen, projection">
+    type="text/css" media="screen, projection">
 
 <script type="text/javascript"
-	src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
+    src="/esco-accueil/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
-	var jQuery = $.noConflict(true);
+    var jQuery = $.noConflict(true);
 </script>
 
 <div class="esco-accueil">
 
-	<div class="container">
+    <div class="container">
 
-		<div class="portlet-section">
+        <div class="portlet-section">
 
-			<div class="portlet-section-body">
+            <div class="portlet-section-body">
 
-				<div id="content_netocentre" class="text">
+                <div id="content_netocentre" class="text">
 
-					<img src="/esco-accueil/img/netocentre-cfa.jpg" alt="NetO'Centre">
-					<H3>
-						<FONT COLOR="#3F6AA5"><B>Net O'Centre, qu'est-ce que
-								c'est&nbsp;?</B></FONT>
-					</H3>
-					<br>
-					<P>L'Espace Numérique de Travail Net O'Centre renforce la
-						formation par apprentissage en rapprochant l'apprenti, le CFA et
-						l'entreprise.</P>
-						<BR>
-					<P>Il permet à tous de suivre la formation avec le livret
-						électronique d'apprentissage, de consulter le cahier de texte en
-						ligne, de connaitre les notes et les absences, d'accéder à la
-						formation ouverte à distance.</P>
-						<BR>
-					<P>La Région Centre ouvre un nouvel horizon innovant pour
-						l'apprentissage en permettant le numérique dans les liens entre
-						les apprenants, les parents, les formateurs et les maitres
-						d'apprentissage.</P>
-					<BR> <BR>
-					<H3>
-						<FONT COLOR="#3F6AA5"><B>Quels sont les services et
-								applications disponibles&nbsp;? </B></FONT>
-					</H3>
-					<BR>
-					<P>Avec Net O'Centre vous pouvez, en fonction des choix et des
-						abonnements souscrits par le CFA, accéder sans ré identification à
-						près d'une 20ene de services et d'applications dans les domaines
-						suivants :</P>
-					<BR>
-					<UL>
-						<LI><P>pédagogie&nbsp;: plate-forme de formation à
-								distance, livret électronique d'apprentissage, cahier de texte,</P>
-						<LI><P>organisation&nbsp;: espaces de stockage
-								électronique individuel, gestion et réservation des équipements
-								partagés,</P>
-						<LI><P>communicationt&nbsp;: messagerie pour les
-								apprentis, les formateurs, diffusion d'annonces du CFA et de la
-								Région,</P>
-						<LI><P>documentation&nbsp;: le Centre de documentation
-								spécialisé en ligne.</P>
-					</UL>
-				</div>
+                    <img src="/esco-accueil/img/netocentre-cfa.jpg" alt="NetO'Centre">
+                    <H3>
+                        <FONT COLOR="#3F6AA5"><B>Net O'Centre, qu'est-ce que
+                                c'est&nbsp;?</B></FONT>
+                    </H3>
+                    <br>
+                    <P>L'Espace Numérique de Travail Net O'Centre renforce la
+                        formation par apprentissage en rapprochant l'apprenti, le CFA et
+                        l'entreprise.</P>
+                        <BR>
+                    <P>Il permet à tous de suivre la formation avec le livret
+                        électronique d'apprentissage, de consulter le cahier de texte en
+                        ligne, de connaitre les notes et les absences, d'accéder à la
+                        formation ouverte à distance.</P>
+                        <BR>
+                    <P>La Région Centre-Val de Loire ouvre un nouvel horizon innovant pour
+                        l'apprentissage en permettant le numérique dans les liens entre
+                        les apprenants, les parents, les formateurs et les maitres
+                        d'apprentissage.</P>
+                    <BR> <BR>
+                    <H3>
+                        <FONT COLOR="#3F6AA5"><B>Quels sont les services et
+                                applications disponibles&nbsp;? </B></FONT>
+                    </H3>
+                    <BR>
+                    <P>Avec Net O'Centre vous pouvez, en fonction des choix et des
+                        abonnements souscrits par le CFA, accéder sans ré identification à
+                        près d'une 20ene de services et d'applications dans les domaines
+                        suivants :</P>
+                    <BR>
+                    <UL>
+                        <LI><P>pédagogie&nbsp;: plate-forme de formation à
+                                distance, livret électronique d'apprentissage, cahier de texte,</P>
+                        <LI><P>organisation&nbsp;: espaces de stockage
+                                électronique individuel, gestion et réservation des équipements
+                                partagés,</P>
+                        <LI><P>communicationt&nbsp;: messagerie pour les
+                                apprentis, les formateurs, diffusion d'annonces du CFA et de la
+                                Région,</P>
+                        <LI><P>documentation&nbsp;: le Centre de documentation
+                                spécialisé en ligne.</P>
+                    </UL>
+                </div>
 
-			</div>
+            </div>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 
-	<script type="text/javascript"
-		src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>
+    <script type="text/javascript"
+        src="/esco-accueil/js/esco-accueil-page-readmore.js"></script>
 
 </div>

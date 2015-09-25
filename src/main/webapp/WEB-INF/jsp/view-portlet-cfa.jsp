@@ -49,7 +49,7 @@
 					<div id="slider" class="esco-accueil">
 						<ul>
 							<li><img src="/esco-accueil/img/netocentre-cfa.jpg"	alt="NetO'Centre"></li>
-							<li><img src="/esco-accueil/img/region.jpg" alt="Région Centre"></li>
+							<li><img src="/esco-accueil/img/region.jpg" alt="Région Centre-Val de Loire"></li>
 							<li><img src="/esco-accueil/img/apprentissage.jpg" alt="Apprentissage"></li>
 						</ul>
 					</div>
@@ -64,10 +64,10 @@
 										href="/portail/f/netocentre">En
 										savoir plus </a>
 								</div></li>
-							<li><img src="/esco-accueil/img/thumb_region.jpg" alt="Région Centre"/>
+							<li><img src="/esco-accueil/img/thumb_region.jpg" alt="Région Centre-Val de Loire"/>
 								<div class="esco-accueil meta">
-									<h3>Région Centre</h3>
-									<p>Pour plus d'informations sur les dispositifs proposés par la	Région Centre aux ...</p>
+									<h3>Région Centre-Val de Loire</h3>
+									<p>Pour plus d'informations sur les dispositifs proposés par la	Région Centre-Val de Loire aux ...</p>
 									<a class="readmore"
 										href="/portail/f/region">En
 										savoir plus </a>
