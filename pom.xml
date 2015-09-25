@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.esco.portlet.accueil</groupId>
     <artifactId>esco-accueil</artifactId>
-    <version>0.0.14</version>
+    <version>0.0.15-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>esco-accueil</name>
 
@@ -166,6 +166,6 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/GIP-RECIA/esco-accueil.git</connection>
         <url>git:ssh://git@github.com/GIP-RECIA/esco-accueil.git</url>
-      <tag>esco-accueil-0.0.14</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
