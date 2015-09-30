@@ -85,7 +85,7 @@
 							Voyages à l'étranger, Sorties à prix réduits
 							- Région Centre-Val de Loire : Plus qu'une Région une chance pour l'éducation - www.regioncentre-valdeloire.fr" />
 								<div class="esco-accueil meta">
-									<h3>Région Centre</h3>
+									<h3>Région Centre-Val de Loire</h3>
 									<p>La Région a la responsabilité des conditions matérielles offertes ...</p>
 									<a class="readmore"
 										href="/portail/f/region">En
