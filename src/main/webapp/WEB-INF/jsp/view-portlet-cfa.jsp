@@ -37,7 +37,7 @@
     var jQuery = $.noConflict(true);
 </script>
 
-<div class="esco-accueil">
+<div id="main" class="esco-accueil">
 
     <div class="container">
 

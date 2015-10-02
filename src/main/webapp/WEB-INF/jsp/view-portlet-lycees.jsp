@@ -42,7 +42,7 @@
     var jQuery = $.noConflict(true);
 </script>
 
-<div class="esco-accueil">
+<div id="main" class="esco-accueil">
 
     <div class="container">
 
@@ -53,7 +53,6 @@
                 <div id="content">
                     <div id="slider" class="esco-accueil">
                         <ul>
-                            <li><img src="/esco-accueil/img/netocentre.jpg"	alt="NetO'Centre"></li>
                             <li><img src="/esco-accueil/img/region.jpg"
                                 alt="Avec la Région Centre-Val de Loire y'a vraiment de quoi sourire !
                             - toutes les informations sur www.jeunesocentre.fr
@@ -69,15 +68,6 @@
                     </div>
                     <div id="navigation" class="esco-accueil">
                         <ul>
-                            <li><img src="/esco-accueil/img/thumb_netocentre.jpg" alt="NetO'Centre" />
-                                <div class="esco-accueil meta">
-                                    <h3>NetO'Centre</h3>
-                                    <p>Qu’est-ce que c'est ?</p>
-                                    <p>Quels sont les services et applications disponibles ?</p>
-                                    <a class="readmore"
-                                        href="/portail/f/netocentre">En
-                                        savoir plus </a>
-                                </div></li>
                             <li><img src="/esco-accueil/img/thumb_region.jpg"
                                 alt="Avec la Région Centre-Val de Loire y'a vraiment de quoi sourire !
                             - toutes les informations sur www.jeunesocentre.fr

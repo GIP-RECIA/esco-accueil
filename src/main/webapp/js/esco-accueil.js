@@ -158,9 +158,9 @@
         if (nb_img_loaded == $('#content img').length){
             var nav_width;
             var resizeWidth = totalWidth;
-            if ((resizeWidth + 10) > $(".esco-accueil").width()) {
+            if ((resizeWidth + 10) > $("#main").width()) {
                 $('#slider').css('display', 'none');
-                nav_width = (($(".esco-accueil").width()*2)/3);
+                nav_width = (($("#main").width()*2)/3);
                 if (nav_width < min_width) nav_width=min_width;
                 resizeWidth = nav_width;
             } else {
@@ -176,7 +176,7 @@
             // on a besoin de connaître la hauteur de chaque li par rapport à la hauteur max
             // puis pour chaque li on ajuste les éléments le composant
             var list_li = $('#navigation').find('li');
-            var li_height = totalHeight / 4;
+            var li_height = totalHeight / 3;
             //console.log("set li_height : " + li_height);
 
             var img_width;
